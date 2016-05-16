@@ -6,7 +6,7 @@ FLITE = -I${FLITEDIR}/include -L${FLITEDIR}/build/armv7l-linux-gnueabihf/lib -lf
 ALL = ${PS} ${FLITE} -llirc_client
 
 Prometheus: prometheus.cpp tvControl.o computer.o internet.o
-	${CC} -Wall ${CFLAGS} prometheus.cpp tvControl.o computer.o -o Prometheus ${ALL}
+	${CC} ${CFLAGS} prometheus.cpp tvControl.o computer.o -o Prometheus ${ALL}
 
 computer.o: computer.cpp computer.h
 	${CC} ${CFLAGS} -c computer.cpp ${FLITE}
@@ -20,5 +20,5 @@ internet.o: internet.cpp internet.h
 clean:
 	rm Prometheus *.o
 
-test: InternetTest
+test:
 	./tests/make

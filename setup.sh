@@ -1,3 +1,6 @@
+echo "Updating your apt-get stuff"
+apt-get update
+
 echo "Assuming that the microphone is already setup..."
 echo "Downloading Pocket Sphinx dependencies... \n"
 apt-get install alsa-utils
@@ -36,6 +39,9 @@ tar -xjf flite-2.0.0-release.tar.bz2
 cd flite-2.0.0-release
 ./configure
 make
+
+echo "install openSSL"
+sudo apt-get install libssl-dev
 
 echo "install lirk"
 apt-get install lirc

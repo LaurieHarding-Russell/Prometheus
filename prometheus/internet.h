@@ -10,27 +10,22 @@ What have I gotten myself into?
 #define internet_h
 
 #include <stdio.h>
-#include <sys/socket.h>
-#include <arpa/inet.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <netinet/in.h>
-#include <sys/types.h>
-#include <netdb.h>
 
-#include <string.h>
+// OpenSSL stuff
+#include <openssl/bio.h>
+#include <openssl/ssl.h>
+#include <openssl/err.h>
+
+//#include <string.h>
+#include <string>
 #include <iostream>
-
-#define PORT 80
 
 class Internet {
 	public:
 	Internet();
 	~Internet();
-	std::string search(std::string search);
-
-	private:
-	struct sockaddr_in server;
+	std::string search(char* search);
 };
 
 #endif
+
