@@ -24,7 +24,7 @@ class Internet {
 	public:
 	Internet();
 	~Internet();
-	std::string search(char* search);
+	std::string search(std::string search);
 };
 
 #endif

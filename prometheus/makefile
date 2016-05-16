@@ -3,10 +3,11 @@ CFLAGS = -g -std=c++11 -lpthread
 PS = -DMODELDIR=\"`pkg-config --variable=modeldir pocketsphinx`\" `pkg-config --cflags --libs pocketsphinx sphinxbase` 
 FLITEDIR = ./../../flite-2.0.0-release
 FLITE = -I${FLITEDIR}/include -L${FLITEDIR}/build/armv7l-linux-gnueabihf/lib -lflite_cmu_us_kal -lflite_usenglish -lflite_cmulex -lflite -lm
-ALL = ${PS} ${FLITE} -llirc_client
+SSL = -lssl -lcrypto
+ALL = ${PS} ${FLITE} -llirc_client ${SSL}
 
 Prometheus: prometheus.cpp tvControl.o computer.o internet.o
-	${CC} ${CFLAGS} prometheus.cpp tvControl.o computer.o -o Prometheus ${ALL}
+	${CC} ${CFLAGS} prometheus.cpp tvControl.o computer.o internet.o -o Prometheus ${ALL}
 
 computer.o: computer.cpp computer.h
 	${CC} ${CFLAGS} -c computer.cpp ${FLITE}

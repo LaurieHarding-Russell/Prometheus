@@ -7,6 +7,7 @@
 
 #include "tvControl.h"
 #include "computer.h"
+#include "internet.h"
 #include <thread>
 #include <chrono>
 #include <mutex>
@@ -22,6 +23,7 @@ namespace m{
 int main() {
 	tvControl tv;
 	Computer computer;
+	Internet* internet = new Internet();
 	computer.say("Morning. Setting up my brain.");
 
 	// setup pocket sphinx and listen for input
@@ -43,9 +45,13 @@ int main() {
 
 	                        command = input.front();
        		                input.pop();
-				if (command == "google") {
-	        	                command = input.front();
-	                	        input.pop();
+				if (command == "search") {
+					command = "";
+					while(!input.empty()) {
+		        	                command += input.front();
+	        	        	        input.pop();
+					}
+					internet->search(command.c_str());
 				} else if (command == "tv"){
 					if (input.empty())
 						continue;

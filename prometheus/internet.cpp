@@ -11,7 +11,7 @@ Internet::~Internet() {
 
 }
 
-std::string Internet::search(char* search) {
+std::string Internet::search(std::string search) {
 	BIO* bio;
 	std::string result;
 
@@ -54,7 +54,7 @@ std::string Internet::search(char* search) {
 		// Send request
 		char request[255];
 		strcpy (request, "GET https://duckduckgo.com/?q=");
-		strcat (request, search);
+		strcat (request, search.c_str());
 		strcat (request, "\r\n\r\n");
 		std::cout << request <<'\n';
 
@@ -84,8 +84,18 @@ std::string Internet::search(char* search) {
 		if (pos > 0){
 			result = result.substr(pos);
 			// Check for meaning
-			pos =result.find("\"zci-about\"");
-			
+			int meaning = result.find("\"zci-meanings\"");
+			int about = result.find("\"zci-about\"");
+			if(meaning> 0) {
+				// Has meaning ia
+				result = result.substr(meaning);
+				
+			} else if ( meaning > 0) {
+				// Has about ia
+				result = result.substr(about);
+			} else {
+				result = "unsupported instant answer.";
+			}
 			// Check for about
 		} else {
 			result = "Sorry, Duck Duck go failed to provide an instant answer. Maybe try rephrasing the query?";
