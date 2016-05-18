@@ -53,7 +53,7 @@ std::string Internet::search(std::string search) {
 	} else {
 		// Send request
 		char request[255];
-		strcpy (request, "GET https://duckduckgo.com/?q=");
+		strcpy (request, "GET https://duckduckgo.com/html/?q=");
 		strcat (request, search.c_str());
 		strcat (request, "\r\n\r\n");
 		std::cout << request <<'\n';
@@ -80,26 +80,39 @@ std::string Internet::search(std::string search) {
 	SSL_CTX_free(ctx);
 	BIO_free_all(bio);
 	if (result.length()>25) {
-		int pos = result.find("<div id=\"zero_click_wrapper\"");
-		if (pos > 0){
+		int pos = result.find("class=\"result results_links results_links_deep web-result \"");
+		if (pos > 0) {
 			result = result.substr(pos);
 			// Check for meaning
-			int meaning = result.find("\"zci-meanings\"");
-			int about = result.find("\"zci-about\"");
-			if(meaning> 0) {
-				// Has meaning ia
-				result = result.substr(meaning);
-				
-			} else if ( meaning > 0) {
-				// Has about ia
-				result = result.substr(about);
+			pos = result.find("class=\"result__snippet\"");
+			if (pos > 0) {
+				result = result.substr(pos);
+				pos = result.find(">");
+				result = result.substr(pos+1);
+				pos = result.find("</a>");
+				if (pos > 0) {
+					result = result.substr(0, pos);
+					result = cleanStringOfTags(result);
+				}
 			} else {
-				result = "unsupported instant answer.";
+				result = "unsupported answer format returned. Try rephrasing.";
 			}
 			// Check for about
 		} else {
-			result = "Sorry, Duck Duck go failed to provide an instant answer. Maybe try rephrasing the query?";
+			result = "Can't find anything!";
 		}
 	}
 	return result;
+}
+
+std::string Internet::cleanStringOfTags(std::string text) {
+	int pos1,pos2;
+	do {
+		pos1 = text.find("<");
+		pos2 = text.find(">");
+		if (pos1 > 0 && pos2 > pos1) {
+			text = text.substr(0,pos1) + text.substr(pos2+1);
+		}
+	} while (pos1 > 0 || pos2 > pos1);
+	return text;
 }

@@ -25,6 +25,10 @@ class Internet {
 	Internet();
 	~Internet();
 	std::string search(std::string search);
+
+	private:
+	std::string cleanStringOfTags(std::string text);
+
 };
 
 #endif
