@@ -6,8 +6,11 @@ FLITE = -I${FLITEDIR}/include -L${FLITEDIR}/build/armv7l-linux-gnueabihf/lib -lf
 SSL = -lssl -lcrypto
 ALL = ${PS} ${FLITE} -llirc_client ${SSL}
 
-Prometheus: prometheus.cpp tvControl.o computer.o internet.o
+Prometheus: prometheus.cpp tvControl.o computer.o internet.o 
 	${CC} ${CFLAGS} prometheus.cpp tvControl.o computer.o internet.o -o Prometheus ${ALL}
+
+#voiceInput.o: voiceInput.cpp voiceInput.h
+#	${CC} ${CFLAGS} -c voiceInput.cpp ${PS}
 
 computer.o: computer.cpp computer.h
 	${CC} ${CFLAGS} -c computer.cpp ${FLITE}
