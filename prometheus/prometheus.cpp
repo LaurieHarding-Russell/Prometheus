@@ -46,8 +46,10 @@ int main() {
 				std::cout << "Computer: ";
 				int num = 0;
 				while (input.empty() && num <20) {
-					std::this_thread::sleep_for(std::chrono::milliseconds(10));
+					m::lock.unlock();
+					std::this_thread::sleep_for(std::chrono::milliseconds(100));
 					num++;
+					m::lock.lock();
 				}
 				if (input.empty())
 					continue;
@@ -60,10 +62,11 @@ int main() {
 						command += input.front();
 						input.pop();
 					}
+					m::lock.unlock();
 					std::string result = internet->search(command.c_str());
 					computer.say(result.c_str());
 					std::cout<< result << '\n';
-
+					m::lock.lock();
 				} else if (command == "tv"){
 					if (input.empty())
 						continue;
@@ -71,17 +74,28 @@ int main() {
        		        	        input.pop();
 				} else if (command == "say") {
 					std::string say = "";
-					 std::this_thread::sleep_for(std::chrono::milliseconds(100));
+					m::lock.unlock();
+					std::this_thread::sleep_for(std::chrono::milliseconds(500));
+					m::lock.lock();
 					while(!input.empty()) {
 						say = say + input.front();
 						input.pop();
 					}
+					m::lock.unlock();
 					std::this_thread::sleep_for(std::chrono::milliseconds(100));
 					computer.say(say.c_str());
 					std::cout << "The computer said" << say << '\n';
+					m::lock.lock();
+				} else if (command == "shutdown" ||
+					(command == "shut" &&  input.front() == "down"))
+				{
+					m::quit = true;
+					computer.say("I'm going to sleep now");
 				} else {
 					std::cout << command + "\n";
 				}
+			} else {
+				std::cout << command + "\n";
 			}
 		}
 
@@ -90,6 +104,7 @@ int main() {
 		std::this_thread::sleep_for(std::chrono::milliseconds(10));
 		m::lock.lock();
 	}
+	m::lock.unlock();
 	inputThread.join();
 	return 0;
 }
@@ -105,7 +120,8 @@ static void getMicInput() {
         config = cmd_ln_init(NULL, ps_args(), TRUE,
                 "-hmm", MODELDIR "/en-us/en-us",
                 "-lm", MODELDIR "/en-us/en-us.lm.bin",
-                "-dict", MODELDIR "/en-us/k-en-us.dict",
+                "-dict", MODELDIR "/en-us/cmudict-en-us.dict",
+		//"", "",
                 NULL);
 
         ps = ps_init(config);
