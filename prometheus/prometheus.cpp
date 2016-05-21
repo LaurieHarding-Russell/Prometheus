@@ -121,7 +121,7 @@ static void getMicInput() {
                 "-hmm", MODELDIR "/en-us/en-us",
                 "-lm", MODELDIR "/en-us/en-us.lm.bin",
                 "-dict", MODELDIR "/en-us/cmudict-en-us.dict",
-		//"", "",
+		"-kws", "./dictionary/keyword.list",
                 NULL);
 
         ps = ps_init(config);
