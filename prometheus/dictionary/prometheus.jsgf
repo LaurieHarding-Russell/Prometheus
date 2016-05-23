@@ -1,0 +1,8 @@
+#JSGF V1.0;
+/**
+ * JSGF Grammar for Hello World example
+ */
+grammar hello;
+public <baseCommand> = computer <command>;
+<command> = say <arg> | search <arg> | shutdown | <NULL>;
+<arg> = (a | b | c | d | e | f | g | h | i | j | k| l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | <NULL>)*;
