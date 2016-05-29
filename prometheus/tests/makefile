@@ -12,9 +12,9 @@ InternetUnitTest: internetUnitTest.cpp ./../internet.o
 	${CC} ${CFLAGS} internetUnitTest.cpp ./../internet.o -o InternetUnitTest -I./../ ${SSL}
 	./InternetUnitTest
 
-#VoiceUnitTest: voiceInputUnitTest.cpp ./../voiceInput.o
-#	${CC} ${CFLAGS} internetUnitTest.cpp ./../internet.o -o VoiceUnitTest-I./../ ${SSL}
-#	./VoiceUnitTest
+VoiceUnitTest: voiceInputUnitTest.cpp
+	${CC} ${CFLAGS} voiceInputUnitTest.cpp -o VoiceUnitTest -I ./../ ${PS}
+	./VoiceUnitTest
 
 clean:
-	rm InternetUnitTest *.o
+	rm InternetUnitTest VoiceUnitTest *.o
