@@ -7,6 +7,11 @@ Purpose: This class deals with controlling the tv and its periferals.
 #include <string>
 
 #include "lirc/lirc_client.h"
+// CEC
+#include <iostream> // CEC libraries use std::cout without initializing it... wtf.
+#include <libcec/cec.h>
+//#include <libcec/cecloader.h>
+//#include "bcm_host.h"
 
 class tvControl {
 	public:
@@ -14,13 +19,19 @@ class tvControl {
 	~tvControl();
 	void tvOn();
 	void tvOff();
+	int onKeypress(void* not_used, const CEC::cec_keypress msg);
 
 	private:
 	std::string pin = "21";
-	bool cec;
 
 	// Lirc stuff
 	int fd;
+
+	// CEC
+	bool cec;
+	CEC::ICECCallbacks        cec_callbacks;
+	CEC::libcec_configuration cec_config;
+	CEC::ICECAdapter* cec_adapter;
 };
 
 #endif
