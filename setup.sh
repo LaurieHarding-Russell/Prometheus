@@ -1,4 +1,44 @@
 #!/bin/bash
+setupPocketSphinx(){
+        echo "Downloading Pocket Sphinx Base"
+        cd ..
+        wget --directory-prefix=./  https://sourceforge.net/projects/cmusphinx/files/sphinxbase/5prealpha/sphinxbase-5preal$
+        echo "Configuring Pocket Sphinx Base"
+        gzip -d ./../sphinxbase-5prealpha.tar.gz
+        tar -xvf ./../sphinxbase-5prealpha.tar
+        ./../sphinxbase-5prealpha/configure --enable-fixed
+        ./../sphinxbase-5prealpha/make
+        ./../sphinxbase-5prealpha/make install
+
+        echo "Downloing Pocket Sphinx"
+        wget --directory-prefix=./  https://sourceforge.net/projects/cmusphinx/files/pocketsphinx/5prealpha/pocketsphinx-5p$
+
+        echo "Configure Pocket Sphinx"
+        gzip -d ./pocketsphinx-5prealpha.tar.gz
+        tar -xvf ./pocketsphinx-5prealpha.tar
+
+        ./pocketsphinx-5prealpha/configure
+        ./pocketsphinx-5prealpha/make
+        ./pocketsphinx-5prealpha/make install
+        ./pocketsphinx-5prealpha/export LD_LIBRARY_PATH=/usr/local/lib
+        ./pocketsphinx-5prealpha/export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
+}
+
+setupFlite() {
+        echo "install flite"
+        cd ..
+        wget -directory-prefix=./ http://www.festvox.org/flite/packed/flite-2.0/flite-2.0.0-release.tar.bz2
+        tar -xjf ./flite-2.0.0-release.tar.bz2
+        ./flite-2.0.0-release/configure
+        ./flite-2.0.0-release/make
+}
+
+
+#######################
+# Script starts here! #
+#######################
+echo "Updating your apt-get stuff"
+apt-get update
 
 HEIGHT=15
 WIDTH=40
@@ -9,7 +49,7 @@ MENU="Setup options"
 
 OPTIONS=(0 "ALL"
 	 1 "Install pocketsphinx"
-         2 "Flight"
+         2 "Install Flite"
          3 "Other dependencies")
 
 CHOICE=$(dialog --clear \
@@ -19,9 +59,6 @@ CHOICE=$(dialog --clear \
                 $HEIGHT $WIDTH $CHOICE_HEIGHT \
                 "${OPTIONS[@]}" \
                 2>&1 >/dev/tty)
-
-echo "Updating your apt-get stuff"
-apt-get update
 
 clear
 case $CHOICE in
@@ -35,27 +72,7 @@ case $CHOICE in
 	apt-get install bison
 	apt-get install libasound2-dev
 
-	echo "Downloading Pocket Sphinx Base"
-	wget --directory-prefix=./../  https://sourceforge.net/projects/cmusphinx/files/sphinxbase/5prealpha/sphinxbase-5prealpha.tar.gz
-	echo "Configuring Pocket Sphinx Base"
-	gzip -d ./../sphinxbase-5prealpha.tar.gz
-	tar -xvf ./../sphinxbase-5prealpha.tar
-	./../sphinxbase-5prealpha/configure --enable-fixed
-	./../sphinxbase-5prealpha/make
-	./../sphinxbase-5prealpha/make install
-
-	echo "Downloing Pocket Sphinx"
-	wget --directory-prefix=./../  https://sourceforge.net/projects/cmusphinx/files/pocketsphinx/5prealpha/pocketsphinx-5prealpha.tar.gz
-
-	echo "Configure Pocket Sphinx"
-	gzip -d ./../pocketsphinx-5prealpha.tar.gz
-	tar -xvf ./../pocketsphinx-5prealpha.tar
-	cd pocketsphinx-5prealpha
-	./../pocketsphinx-5prealpha/configure
-	./../pocketsphinx-5prealpha/make
-	./../pocketsphinx-5prealpha/make install
-	./../pocketsphinx-5prealpha/export LD_LIBRARY_PATH=/usr/local/lib
-	./../pocketsphinx-5prealpha/export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
+	setupPocketSphinx
 	if [$CHOICE == 1]
 	then
 		break;
@@ -63,11 +80,7 @@ case $CHOICE in
 	;;
 
 	2)
-	echo "install flite"
-	wget -directory-prefix=./../ http://www.festvox.org/flite/packed/flite-2.0/flite-2.0.0-release.tar.bz2
-	tar -xjf ./../flite-2.0.0-release.tar.bz2
-	./../flite-2.0.0-release/configure
-	./../flite-2.0.0-release/make
+	setupFlite
 	if [$CHOICE == 2]
 	then
                 break;
@@ -108,3 +121,37 @@ echo "}"
 
 #echo "Setup the program to run on startup."
 #echo "create /etc/init.d/prometheus which should be a shell script that starts Prometheus."
+
+setupPocketSphinx(){
+	echo "Downloading Pocket Sphinx Base"
+	cd ..
+        wget --directory-prefix=./  https://sourceforge.net/projects/cmusphinx/files/sphinxbase/5prealpha/sphinxbase-5preal$
+        echo "Configuring Pocket Sphinx Base"
+        gzip -d ./../sphinxbase-5prealpha.tar.gz
+        tar -xvf ./../sphinxbase-5prealpha.tar
+        ./../sphinxbase-5prealpha/configure --enable-fixed
+        ./../sphinxbase-5prealpha/make
+        ./../sphinxbase-5prealpha/make install
+
+        echo "Downloing Pocket Sphinx"
+        wget --directory-prefix=./  https://sourceforge.net/projects/cmusphinx/files/pocketsphinx/5prealpha/pocketsphinx-5p$
+
+        echo "Configure Pocket Sphinx"
+        gzip -d ./pocketsphinx-5prealpha.tar.gz
+        tar -xvf ./pocketsphinx-5prealpha.tar
+
+        ./pocketsphinx-5prealpha/configure
+        ./pocketsphinx-5prealpha/make
+        ./pocketsphinx-5prealpha/make install
+        ./pocketsphinx-5prealpha/export LD_LIBRARY_PATH=/usr/local/lib
+        ./pocketsphinx-5prealpha/export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
+}
+
+setupFlite() {
+	echo "install flite"
+	cd ..
+        wget -directory-prefix=./ http://www.festvox.org/flite/packed/flite-2.0/flite-2.0.0-release.tar.bz2
+        tar -xjf ./../flite-2.0.0-release.tar.bz2
+        ./flite-2.0.0-release/configure
+        ./flite-2.0.0-release/make
+}
