@@ -1,66 +1,96 @@
+#!/bin/bash
+
+HEIGHT=15
+WIDTH=40
+CHOICE_HEIGHT=4
+BACKTITLE="Laurie's real fancy/crappy setup script."
+TITLE="Prometheus Setup"
+MENU="Setup options"
+
+OPTIONS=(0 "ALL"
+	 1 "Install pocketsphinx"
+         2 "Flight"
+         3 "Other dependencies")
+
+CHOICE=$(dialog --clear \
+                --backtitle "$BACKTITLE" \
+                --title "$TITLE" \
+                --menu "$MENU" \
+                $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                "${OPTIONS[@]}" \
+                2>&1 >/dev/tty)
+
 echo "Updating your apt-get stuff"
 apt-get update
 
-echo "Assuming that the microphone is already setup..."
-echo "Downloading Pocket Sphinx dependencies... \n"
-apt-get install alsa-utils
-apt-get install bison
-apt-get install libasound2-dev
+clear
+case $CHOICE
+	0)
+	;;
+	1)
+	echo "Assuming that the microphone is already setup..."
+	echo "Downloading Pocket Sphinx dependencies... \n"
+	apt-get install alsa-utils
+	apt-get install bison
+	apt-get install libasound2-dev
 
-echo "Downloading Pocket Sphinx Base"
-wget --directory-prefix=./../  https://sourceforge.net/projects/cmusphinx/files/sphinxbase/5prealpha/sphinxbase-5prealpha.tar.gz
-echo "Configuring Pocket Sphinx Base"
-cd ..
-gzip -d sphinxbase-5prealpha.tar.gz
-tar -xvf sphinxbase-5prealpha.tar
-cd sphinxbase-5prealpha
-./configure --enable-fixed
-make
-make install
-cd ..
+	echo "Downloading Pocket Sphinx Base"
+	wget --directory-prefix=./../  https://sourceforge.net/projects/cmusphinx/files/sphinxbase/5prealpha/sphinxbase-5prealpha.tar.gz
+	echo "Configuring Pocket Sphinx Base"
+	gzip -d ./../sphinxbase-5prealpha.tar.gz
+	tar -xvf ./../sphinxbase-5prealpha.tar
+	./../sphinxbase-5prealpha/configure --enable-fixed
+	./../sphinxbase-5prealpha/make
+	./../sphinxbase-5prealpha/make install
 
-echo "Downloing Pocket Sphinx"
-wget --directory-prefix=./  https://sourceforge.net/projects/cmusphinx/files/pocketsphinx/5prealpha/pocketsphinx-5prealpha.tar.gz
+	echo "Downloing Pocket Sphinx"
+	wget --directory-prefix=./../  https://sourceforge.net/projects/cmusphinx/files/pocketsphinx/5prealpha/pocketsphinx-5prealpha.tar.gz
 
-echo "Configure Pocket Sphinx"
-gzip -d pocketsphinx-5prealpha.tar.gz
-tar -xvf pocketsphinx-5prealpha.tar
-cd pocketsphinx-5prealpha
-./configure
-make
-make install
-export LD_LIBRARY_PATH=/usr/local/lib
-export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
-cd ..
+	echo "Configure Pocket Sphinx"
+	gzip -d ./../pocketsphinx-5prealpha.tar.gz
+	tar -xvf ./../pocketsphinx-5prealpha.tar
+	cd pocketsphinx-5prealpha
+	./../pocketsphinx-5prealpha/configure
+	./../pocketsphinx-5prealpha/make
+	./../pocketsphinx-5prealpha/make install
+	./../pocketsphinx-5prealpha/export LD_LIBRARY_PATH=/usr/local/lib
+	./../pocketsphinx-5prealpha/export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
+	if $CHOICE == 1 then
+		break;
+	fi
+	;;
 
-echo "install flite"
-wget -directory-prefix=./ http://www.festvox.org/flite/packed/flite-2.0/flite-2.0.0-release.tar.bz2
-tar -xjf flite-2.0.0-release.tar.bz2
-cd flite-2.0.0-release
-./configure
-make
+	2)
+	echo "install flite"
+	wget -directory-prefix=./../ http://www.festvox.org/flite/packed/flite-2.0/flite-2.0.0-release.tar.bz2
+	tar -xjf ./../flite-2.0.0-release.tar.bz2
+	./../flite-2.0.0-release/configure
+	./../flite-2.0.0-release/make
+	if $CHOICE == 2 then
+                break;
+        fi
+	;;
 
-echo "install openSSL"
-sudo apt-get install libssl-dev
+	3)
+	echo "install openSSL"
+	sudo apt-get install libssl-dev
 
-echo "install lirk"
-apt-get install lirc
-apt-get install liblircclient-dev
+	echo "install lirk"
+	apt-get install lirc
+	apt-get install liblircclient-dev
 
-echo "Update etc/module"
-cat <<EOF >> /etc/modules
-lirc_dev
-lirc_rpi gpio_out_pin=21
-EOF
+	#echo "Update etc/module"
+	#cat <<EOF >> /etc/modules
+	#lirc_dev
+	#lirc_rpi gpio_out_pin=21
+	#EOF
 
-echo "Hopefully compile it..."
-cd Prometheus
-make
-
-#echo "Adding program to rc.local so that it starts on startup"
-#cat <<EOF >> /etc/rc.local
-#~/home/pi/Documents/Prometheus/Prometheus
-#EOF
+	#echo "Adding program to rc.local so that it starts on startup"
+	#cat <<EOF >> /etc/rc.local
+	#~/home/pi/Documents/Prometheus/Prometheus
+	#EOF
+	;;
+esac
 
 echo "Done? Hopfully?"
 echo "try {"
@@ -72,5 +102,6 @@ echo "	}"
 echo "} catch(human error) {"
 echo "	human.blameLaurie()"
 echo "}"
-echo "Setup the program to run on startup."
-echo "create /etc/init.d/prometheus which should be a shell script that starts Prometheus."
+
+#echo "Setup the program to run on startup."
+#echo "create /etc/init.d/prometheus which should be a shell script that starts Prometheus."
