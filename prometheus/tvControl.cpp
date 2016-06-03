@@ -22,7 +22,7 @@ tvControl::tvControl() {
 	//ec_callbacks.CBCecKeyPress    = &tvControl::onKeypress;
 
 	// Get a cec adapter
-	cec_adapter = LibCecInitialise(&cec_config);
+	/*cec_adapter = LibCecInitialise(&cec_config);
 	if( !cec_adapter ) {
         	cec = false;
  	} else {
@@ -38,12 +38,12 @@ tvControl::tvControl() {
 				UnloadLibCec(cec_adapter);
 			}
 		}
-	}
+	}*/
 }
 
 tvControl::~tvControl() {
-	cec_adapter->Close();
-	UnloadLibCec(cec_adapter);
+	//cec_adapter->Close();
+	//UnloadLibCec(cec_adapter);
 }
 
 void tvControl::tvOn() {

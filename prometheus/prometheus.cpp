@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <string>
 #include <sstream>
@@ -8,14 +9,13 @@
 #include "computer.h"
 #include "internet.h"
 
-static void getMicInput();
-bool waitForSpeaker();
 
 int main() {
 	tvControl tv;
 	Computer computer;
 	Internet* internet = new Internet();
-	computer.say("Morning. Setting up my brain.");
+	computer.displayText("Morning. Try talking to me!");
+	computer.say("Morning. You look well today.");
 
 	// setup pocket sphinx and listen for input
 	std::thread inputThread = std::thread(&mainMenuInput);
@@ -39,7 +39,7 @@ int main() {
 					stopInput();
                                         inputThread.join();
                                         inputThread = std::thread(&generalInput);
-
+					computer.displayText("What would you likeme to search?");
 					computer.say("what would you like me to search?");
 					command = "";
 					do {
@@ -70,6 +70,7 @@ int main() {
 					stopInput();
 					inputThread.join();
 					inputThread = std::thread(&generalInput);
+					computer.displayText("What shall I say?");
 					computer.say("What shall I say?");
 					std::this_thread::sleep_for(std::chrono::milliseconds(2000));
 					do {
