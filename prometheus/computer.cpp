@@ -2,7 +2,7 @@
 #define computer_cpp
 #include "computer.h"
 
-Computer::Computer(){
+Computer::Computer() {
 	flite_init();
 	voice = register_cmu_us_kal(NULL);
 

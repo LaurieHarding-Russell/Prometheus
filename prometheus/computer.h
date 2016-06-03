@@ -19,7 +19,7 @@ class Computer {
 	*/
         void say(const char* text);
 	/*
-	Purpose: to display words
+	Purpose: to display text
 	*/
 	void displayText(const char* text);
 
