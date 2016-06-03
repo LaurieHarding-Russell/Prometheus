@@ -24,8 +24,9 @@ echo "Updating your apt-get stuff"
 apt-get update
 
 clear
-case $CHOICE
+case $CHOICE in
 	0)
+	echo "Setting it all up!"
 	;;
 	1)
 	echo "Assuming that the microphone is already setup..."
@@ -55,7 +56,8 @@ case $CHOICE
 	./../pocketsphinx-5prealpha/make install
 	./../pocketsphinx-5prealpha/export LD_LIBRARY_PATH=/usr/local/lib
 	./../pocketsphinx-5prealpha/export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
-	if $CHOICE == 1 then
+	if [$CHOICE == 1]
+	then
 		break;
 	fi
 	;;
@@ -66,7 +68,8 @@ case $CHOICE
 	tar -xjf ./../flite-2.0.0-release.tar.bz2
 	./../flite-2.0.0-release/configure
 	./../flite-2.0.0-release/make
-	if $CHOICE == 2 then
+	if [$CHOICE == 2]
+	then
                 break;
         fi
 	;;
