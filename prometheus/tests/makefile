@@ -20,7 +20,7 @@ TvControlUnitTest: tvControlUnitTest.cpp ./../tvControl.o
 
 # Test not working.
 VoiceUnitTest: voiceInputUnitTest.cpp ./../voiceInput.h
-	${CC} ${CFLAGS} voiceInputUnitTest.cpp -o VoiceUnitTest -I ./../ ${PS}
+	${CC} ${CFLAGS} voiceInputUnitTest.cpp ./../voiceInput.h -o VoiceUnitTest -I ./../ ${ALL}
 	./VoiceUnitTest
 
 ComputerUnitTest: computerUnitTest.cpp ./../computer.o

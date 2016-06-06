@@ -29,11 +29,7 @@ int main() {
 				std::cout << "Computer: ";
 				int num = 0;
 				//waitForSpeaker();
-				if (voiceIn::input.empty())
-					continue;
-
-				command = voiceIn::input.front();
-				voiceIn::input.pop();
+				command = getInput();
 				if (command == "search") {
 					std::string search = "";
 					stopInput();
@@ -60,22 +56,22 @@ int main() {
                                         inputThread = std::thread(&mainMenuInput);
 
 				} else if (command == "tv"){
-					if (voiceIn::input.empty())
-						continue;
-	                	        command = voiceIn::input.front();
-       		        	        voiceIn::input.pop();
+					// command = getInput();
 				} else if (command == "talk") {
 					std::string say = "";
 				//	waitForSpeaker();
 					stopInput();
 					inputThread.join();
+					// Maybe clear the input just in case?
 					inputThread = std::thread(&generalInput);
-					computer.displayText("What shall I say?");
+					//computer.displayText("What shall I say?");
 					computer.say("What shall I say?");
 					std::this_thread::sleep_for(std::chrono::milliseconds(2000));
 					do {
 						command = getInput();
 						say += command;
+						std::cout << say << '\n';
+						std::this_thread::sleep_for(std::chrono::milliseconds(10));
 					} while (command != "");
 					computer.say(say.c_str());
 					std::cout << "The computer said" << say << '\n';

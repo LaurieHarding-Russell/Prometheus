@@ -119,27 +119,42 @@ static void mainMenuInput() {
 }
 
 static void generalInput() {
-	err_set_logfile("pocketSphinx_Log.txt");
+	err_set_logfile("pocketSphinx_LogGI.txt");
 	voiceIn::quit = false;
 
         // Pocket sphinx setup
         ps_decoder_t *ps = NULL;
         cmd_ln_t *config = NULL;
 
-        config = cmd_ln_init(NULL, ps_args(), TRUE,
+	ad_rec_t *ad;	// <- microphone recorder.
+
+
+	/*
+	We are using a phonetically tied language model.
+	*/
+	config = cmd_ln_init(NULL, ps_args(), TRUE,
 		"-hmm", MODELDIR "/en-us/en-us",
-		"-lm", MODELDIR "/en-us/en-us.lm.bin",
+		"-featparams", MODELDIR "/cmusphinx-en-us-ptm-5.2/feat.params",
+		"-mdef", MODELDIR "/cmusphinx-en-us-ptm-5.2/mdef",
+		"-mean", MODELDIR "/cmusphinx-en-us-ptm-5.2/means",
+		"-var", MODELDIR "/cmusphinx-en-us-ptm-5.2/variances",
+		"-tmat", MODELDIR "/cmusphinx-en-us-ptm-5.2/transition_matrices",
+		"-sendump", MODELDIR "/cmusphinx-en-us-ptm-5.2/sendump",
 		"-dict", "./dictionary/en.dict",
+	     	"-compallsen", "yes",
+	     	"-input_endian", "little",
 		NULL);
 
         ps = ps_init(config);
+	if (ps == NULL) {
+		std::cout << "Problem?\n";
+	}
 
-        ad_rec_t *ad;
-        int16 adbuf[8192];
-        uint8 utt_started, in_speech;
-        int32 k;
-        char const *hyp;
-        bool failed = false;
+	int16 adbuf[8192];
+	uint8 utt_started, in_speech;
+	int32 k;
+	char const *hyp;
+	bool failed = false;
 	if ((ad = ad_open_dev(cmd_ln_str_r(config, "-adcdev"),
                                 (int) cmd_ln_float32_r(config,
                                 "-samprate"))) == NULL)
@@ -152,6 +167,7 @@ static void generalInput() {
 
         std::string command = "";
         voiceIn::lock.lock();
+	std::cout << failed << '\n';
         while (!voiceIn::quit && !failed) {
                 voiceIn::lock.unlock();
                 k = ad_read(ad, adbuf, 8191);

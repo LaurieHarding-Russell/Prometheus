@@ -114,6 +114,9 @@ echo "} catch(human error) {"
 echo "	human.blameLaurie()"
 echo "}"
 
+echo "Also, wget http://downloads.sourceforge.net/project/cmusphinx/Acoustic%20and%20Language%20Models/US%20English/cmusphinx-en-us-ptm-5.2.tar.gz?r=&amp;ts=1465160188&amp;use_mirror=heanet"
+echo "and through it in with the en-us.lm.bin."
+
 #echo "Setup the program to run on startup."
 #echo "create /etc/init.d/prometheus which should be a shell script that starts Prometheus."
 
