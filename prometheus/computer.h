@@ -3,7 +3,10 @@
 
 extern"C" {
 	#include "flite.h"
-	cst_voice* register_cmu_us_kal(const char *voxdir);
+	//cst_voice* register_cmu_us_kal(const char *voxdir);
+	//void unregister_cmu_us_kal(cst_voice *vox);
+	cst_voice* register_cmu_us_slt(const char *voxdir);
+	void unregister_cmu_us_slt(cst_voice *vox);
 }
 
 // Graphical output

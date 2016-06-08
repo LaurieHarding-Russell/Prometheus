@@ -1,0 +1,5 @@
+1. Check that voice is install ed in flite folder
+2. Change make file from -lflite_cmu_us_[OldVoice] to -lflite_cmu_us_[NewVoice]
+3. Open computer.h and replace cst_voice* register_cmu_us_*(const char *voxdir);
+and void unregister_cmu_us_*(cst_voice *vox);
+4. Open computer.cpp and replace register_cmu_us_slt(NULL);
