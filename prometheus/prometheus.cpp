@@ -69,6 +69,9 @@ int main() {
 					std::this_thread::sleep_for(std::chrono::milliseconds(1000));
 					do {
 						command = getInput();
+					}while (command != "say");
+					do {
+						command = getInput();
 						if (command != "please") {
 							say+=command + " ";
 							std::this_thread::sleep_for(std::chrono::milliseconds(10));
