@@ -40962,4 +40962,4465 @@ INFO: ms_gauden.c(292): 42 codebook, 3 feature, size:
 INFO: ms_gauden.c(294):  128x13
 INFO: ms_gauden.c(294):  128x13
 INFO: ms_gauden.c(294):  128x13
-INFO: ms_gauden.c(354): 222 variance 
+INFO: ms_gauden.c(354): 222 variance INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from /usr/local/share/pocketsphinx/model/en-us/en-us/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			current		current
+-cmninit		8.0		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					./dictionary/en.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					/usr/local/share/pocketsphinx/model/en-us/en-us
+-input_endian		little		little
+-jsgf					./dictionary/prometheus.jsgf
+-keyphrase				
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='current', VARNORM='no', AGC='none'
+INFO: cmn.c(143): mean[0]= 12.00, mean[1..12]= 0.0
+INFO: acmod.c(164): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: /usr/local/share/pocketsphinx/model/en-us/en-us/mdef
+INFO: mdef.c(531): Found byte-order mark BMDF, assuming this is a binary mdef file
+INFO: bin_mdef.c(336): Reading binary model definition: /usr/local/share/pocketsphinx/model/en-us/en-us/mdef
+INFO: bin_mdef.c(516): 42 CI-phone, 137053 CD-phone, 3 emitstate/phone, 126 CI-sen, 5126 Sen, 29324 Sen-Seq
+INFO: tmat.c(206): Reading HMM transition probability matrices: /usr/local/share/pocketsphinx/model/en-us/en-us/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/en-us/en-us/means
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/en-us/en-us/variances
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(354): 222 variance INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from /usr/local/share/pocketsphinx/model/en-us/en-us/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			current		current
+-cmninit		8.0		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					./dictionary/en.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					/usr/local/share/pocketsphinx/model/en-us/en-us
+-input_endian		little		little
+-jsgf					./dictionary/prometheus.jsgf
+-keyphrase				
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='current', VARNORM='no', AGC='none'
+INFO: cmn.c(143): mean[0]= 12.00, mean[1..12]= 0.0
+INFO: acmod.c(164): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: /usr/local/share/pocketsphinx/model/en-us/en-us/mdef
+INFO: mdef.c(531): Found byte-order mark BMDF, assuming this is a binary mdef file
+INFO: bin_mdef.c(336): Reading binary model definition: /usr/local/share/pocketsphinx/model/en-us/en-us/mdef
+INFO: bin_mdef.c(516): 42 CI-phone, 137053 CD-phone, 3 emitstate/phone, 126 CI-sen, 5126 Sen, 29324 Sen-Seq
+INFO: tmat.c(206): Reading HMM transition probability matrices: /usr/local/share/pocketsphinx/model/en-us/en-us/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/en-us/en-us/means
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/en-us/en-us/variances
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(354): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file /usr/local/share/pocketsphinx/model/en-us/en-us/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(835): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138624 * 20 bytes (2707 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: ./dictionary/en.dict
+ERROR: "dict.c", line 185: Line 33629: No pronunciation for word 'd'; ignored
+ERROR: "dict.c", line 205: Line 86237: Failed to add the word 'oh' (duplicate?); ignored
+INFO: dict.c(213): Allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134521 words read
+INFO: dict.c(358): Reading filler dictionary: /usr/local/share/pocketsphinx/model/en-us/en-us/noisedict
+INFO: dict.c(213): Allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 21336 bytes (20 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 21336 bytes (20 KiB) for single-phone word triphones
+INFO: jsgf.c(706): Defined rule: PUBLIC <prometheus.baseCommand>
+INFO: jsgf.c(706): Defined rule: <prometheus.command>
+INFO: fsg_model.c(208): Computing transitive closure for null transitions
+INFO: fsg_model.c(270): 0 null transitions added
+INFO: fsg_search.c(227): FSG(beam: -1080, pbeam: -1080, wbeam: -634; wip: -26, pip: 0)
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for [NOISE] to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_search.c(173): Added 0 alternate word transitions
+INFO: fsg_lextree.c(110): Allocated 258 bytes (0 KiB) for left and right context phones
+INFO: fsg_lextree.c(256): 29 HMM nodes in lextree (13 leaves)
+INFO: fsg_lextree.c(259): Allocated 3480 bytes (3 KiB) for all lextree nodes
+INFO: fsg_lextree.c(262): Allocated 1560 bytes (1 KiB) for lextree leafnodes
+ERROR: "cmd_ln.c", line 938: Unknown argument: -adcdev
+INFO: cmn_prior.c(131): cmn_prior_update: from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 44.12  4.07  5.88  0.66 10.50 18.05  2.19  0.21  3.69 -2.65 -9.92 -2.84 -0.55 >
+INFO: fsg_search.c(859): 134 frames, 955 HMMs (7/fr), 4491 senones (33/fr), 133 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.25 CPU 0.185 xRT
+INFO: fsg_search.c(871): fsg 2.50 wall 1.851 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 134
+INFO: cmn_prior.c(131): cmn_prior_update: from < 44.12  4.07  5.88  0.66 10.50 18.05  2.19  0.21  3.69 -2.65 -9.92 -2.84 -0.55 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 60.64 -7.92 -2.37  0.37  0.47 10.74 -6.02  3.79 -3.81  0.34 -9.72 -3.20 -4.25 >
+INFO: fsg_search.c(859): 572 frames, 3688 HMMs (6/fr), 17266 senones (30/fr), 934 history entries (1/fr)
+
+INFO: fsg_search.c(869): fsg 0.98 CPU 0.171 xRT
+INFO: fsg_search.c(871): fsg 9.97 wall 1.740 xRT
+INFO: fsg_search.c(265): TOTAL fsg 1.23 CPU 0.174 xRT
+INFO: fsg_search.c(268): TOTAL fsg 12.47 wall 1.766 xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from /usr/local/share/pocketsphinx/model/en-us/en-us/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			current		current
+-cmninit		8.0		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					./dictionary/en.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					/usr/local/share/pocketsphinx/model/en-us/en-us
+-input_endian		little		little
+-jsgf					./dictionary/prometheus.jsgf
+-keyphrase				
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='current', VARNORM='no', AGC='none'
+INFO: cmn.c(143): mean[0]= 12.00, mean[1..12]= 0.0
+INFO: acmod.c(164): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: /usr/local/share/pocketsphinx/model/en-us/en-us/mdef
+INFO: mdef.c(531): Found byte-order mark BMDF, assuming this is a binary mdef file
+INFO: bin_mdef.c(336): Reading binary model definition: /usr/local/share/pocketsphinx/model/en-us/en-us/mdef
+INFO: bin_mdef.c(516): 42 CI-phone, 137053 CD-phone, 3 emitstate/phone, 126 CI-sen, 5126 Sen, 29324 Sen-Seq
+INFO: tmat.c(206): Reading HMM transition probability matrices: /usr/local/share/pocketsphinx/model/en-us/en-us/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/en-us/en-us/means
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/en-us/en-us/variances
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(354): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file /usr/local/share/pocketsphinx/model/en-us/en-us/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(835): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138624 * 20 bytes (2707 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: ./dictionary/en.dict
+ERROR: "dict.c", line 185: Line 33629: No pronunciation for word 'd'; ignored
+ERROR: "dict.c", line 205: Line 86237: Failed to add the word 'oh' (duplicate?); ignored
+INFO: dict.c(213): Allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134521 words read
+INFO: dict.c(358): Reading filler dictionary: /usr/local/share/pocketsphinx/model/en-us/en-us/noisedict
+INFO: dict.c(213): Allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 21336 bytes (20 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 21336 bytes (20 KiB) for single-phone word triphones
+INFO: jsgf.c(706): Defined rule: PUBLIC <prometheus.baseCommand>
+INFO: jsgf.c(706): Defined rule: <prometheus.command>
+INFO: fsg_model.c(208): Computing transitive closure for null transitions
+INFO: fsg_model.c(270): 0 null transitions added
+INFO: fsg_search.c(227): FSG(beam: -1080, pbeam: -1080, wbeam: -634; wip: -26, pip: 0)
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for [NOISE] to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_search.c(173): Added 0 alternate word transitions
+INFO: fsg_lextree.c(110): Allocated 258 bytes (0 KiB) for left and right context phones
+INFO: fsg_lextree.c(256): 29 HMM nodes in lextree (13 leaves)
+INFO: fsg_lextree.c(259): Allocated 3480 bytes (3 KiB) for all lextree nodes
+INFO: fsg_lextree.c(262): Allocated 1560 bytes (1 KiB) for lextree leafnodes
+ERROR: "cmd_ln.c", line 938: Unknown argument: -adcdev
+INFO: cmn_prior.c(131): cmn_prior_update: from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 43.38  5.11  3.49 -4.30  3.10 11.75  6.96  5.56  2.65 -3.17 -12.39 -10.50 -5.41 >
+INFO: fsg_search.c(859): 106 frames, 681 HMMs (6/fr), 3327 senones (31/fr), 105 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.17 CPU 0.159 xRT
+INFO: fsg_search.c(871): fsg 2.42 wall 2.259 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 106
+INFO: cmn_prior.c(131): cmn_prior_update: from < 43.38  5.11  3.49 -4.30  3.10 11.75  6.96  5.56  2.65 -3.17 -12.39 -10.50 -5.41 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 48.09  1.18  3.91  0.64 -2.56  9.20 -0.64  9.84  0.20 -2.98 -11.55 -9.06 -5.84 >
+INFO: fsg_search.c(859): 234 frames, 1443 HMMs (6/fr), 5625 senones (24/fr), 542 history entries (2/fr)
+
+INFO: fsg_search.c(869): fsg 0.39 CPU 0.166 xRT
+INFO: fsg_search.c(871): fsg 7.88 wall 3.354 xRT
+INFO: fsg_search.c(265): TOTAL fsg 0.56 CPU 0.165 xRT
+INFO: fsg_search.c(268): TOTAL fsg 10.30 wall 3.029 xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from /usr/local/share/pocketsphinx/model/en-us/en-us/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			current		current
+-cmninit		8.0		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					./dictionary/en.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					/usr/local/share/pocketsphinx/model/en-us/en-us
+-input_endian		little		little
+-jsgf					./dictionary/prometheus.jsgf
+-keyphrase				
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='current', VARNORM='no', AGC='none'
+INFO: cmn.c(143): mean[0]= 12.00, mean[1..12]= 0.0
+INFO: acmod.c(164): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: /usr/local/share/pocketsphinx/model/en-us/en-us/mdef
+INFO: mdef.c(531): Found byte-order mark BMDF, assuming this is a binary mdef file
+INFO: bin_mdef.c(336): Reading binary model definition: /usr/local/share/pocketsphinx/model/en-us/en-us/mdef
+INFO: bin_mdef.c(516): 42 CI-phone, 137053 CD-phone, 3 emitstate/phone, 126 CI-sen, 5126 Sen, 29324 Sen-Seq
+INFO: tmat.c(206): Reading HMM transition probability matrices: /usr/local/share/pocketsphinx/model/en-us/en-us/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/en-us/en-us/means
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/en-us/en-us/variances
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(354): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file /usr/local/share/pocketsphinx/model/en-us/en-us/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(835): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138624 * 20 bytes (2707 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: ./dictionary/en.dict
+ERROR: "dict.c", line 185: Line 33629: No pronunciation for word 'd'; ignored
+ERROR: "dict.c", line 205: Line 86237: Failed to add the word 'oh' (duplicate?); ignored
+INFO: dict.c(213): Allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134521 words read
+INFO: dict.c(358): Reading filler dictionary: /usr/local/share/pocketsphinx/model/en-us/en-us/noisedict
+INFO: dict.c(213): Allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 21336 bytes (20 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 21336 bytes (20 KiB) for single-phone word triphones
+INFO: jsgf.c(706): Defined rule: PUBLIC <prometheus.baseCommand>
+INFO: jsgf.c(706): Defined rule: <prometheus.command>
+INFO: fsg_model.c(208): Computing transitive closure for null transitions
+INFO: fsg_model.c(270): 0 null transitions added
+INFO: fsg_search.c(227): FSG(beam: -1080, pbeam: -1080, wbeam: -634; wip: -26, pip: 0)
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for [NOISE] to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_search.c(173): Added 0 alternate word transitions
+INFO: fsg_lextree.c(110): Allocated 258 bytes (0 KiB) for left and right context phones
+INFO: fsg_lextree.c(256): 29 HMM nodes in lextree (13 leaves)
+INFO: fsg_lextree.c(259): Allocated 3480 bytes (3 KiB) for all lextree nodes
+INFO: fsg_lextree.c(262): Allocated 1560 bytes (1 KiB) for lextree leafnodes
+ERROR: "cmd_ln.c", line 938: Unknown argument: -adcdev
+INFO: cmn_prior.c(131): cmn_prior_update: from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 44.19  2.29  5.38 -3.00  0.24 10.91  6.01  4.35  2.52 -4.04 -13.39 -10.20 -4.34 >
+INFO: fsg_search.c(859): 108 frames, 644 HMMs (5/fr), 3088 senones (28/fr), 107 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.20 CPU 0.183 xRT
+INFO: fsg_search.c(871): fsg 2.45 wall 2.243 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 108
+INFO: cmn_prior.c(131): cmn_prior_update: from < 44.19  2.29  5.38 -3.00  0.24 10.91  6.01  4.35  2.52 -4.04 -13.39 -10.20 -4.34 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 49.56 -3.04  4.84  2.52 -0.81 10.76 -5.48  6.40  0.77 -2.53 -14.78 -4.64 -6.93 >
+INFO: fsg_search.c(859): 231 frames, 1547 HMMs (6/fr), 6799 senones (29/fr), 485 history entries (2/fr)
+
+INFO: fsg_search.c(869): fsg 0.39 CPU 0.168 xRT
+INFO: fsg_search.c(871): fsg 7.88 wall 3.396 xRT
+INFO: fsg_search.c(265): TOTAL fsg 0.59 CPU 0.174 xRT
+INFO: fsg_search.c(268): TOTAL fsg 10.32 wall 3.045 xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from /usr/local/share/pocketsphinx/model/en-us/en-us/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			current		current
+-cmninit		8.0		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					./dictionary/en.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					/usr/local/share/pocketsphinx/model/en-us/en-us
+-input_endian		little		little
+-jsgf					./dictionary/prometheus.jsgf
+-keyphrase				
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='current', VARNORM='no', AGC='none'
+INFO: cmn.c(143): mean[0]= 12.00, mean[1..12]= 0.0
+INFO: acmod.c(164): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: /usr/local/share/pocketsphinx/model/en-us/en-us/mdef
+INFO: mdef.c(531): Found byte-order mark BMDF, assuming this is a binary mdef file
+INFO: bin_mdef.c(336): Reading binary model definition: /usr/local/share/pocketsphinx/model/en-us/en-us/mdef
+INFO: bin_mdef.c(516): 42 CI-phone, 137053 CD-phone, 3 emitstate/phone, 126 CI-sen, 5126 Sen, 29324 Sen-Seq
+INFO: tmat.c(206): Reading HMM transition probability matrices: /usr/local/share/pocketsphinx/model/en-us/en-us/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/en-us/en-us/means
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/en-us/en-us/variances
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(354): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file /usr/local/share/pocketsphinx/model/en-us/en-us/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(835): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138624 * 20 bytes (2707 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: ./dictionary/en.dict
+ERROR: "dict.c", line 185: Line 33629: No pronunciation for word 'd'; ignored
+ERROR: "dict.c", line 205: Line 86237: Failed to add the word 'oh' (duplicate?); ignored
+INFO: dict.c(213): Allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134521 words read
+INFO: dict.c(358): Reading filler dictionary: /usr/local/share/pocketsphinx/model/en-us/en-us/noisedict
+INFO: dict.c(213): Allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 21336 bytes (20 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 21336 bytes (20 KiB) for single-phone word triphones
+INFO: jsgf.c(706): Defined rule: PUBLIC <prometheus.baseCommand>
+INFO: jsgf.c(706): Defined rule: <prometheus.command>
+INFO: fsg_model.c(208): Computing transitive closure for null transitions
+INFO: fsg_model.c(270): 0 null transitions added
+INFO: fsg_search.c(227): FSG(beam: -1080, pbeam: -1080, wbeam: -634; wip: -26, pip: 0)
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for [NOISE] to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_search.c(173): Added 0 alternate word transitions
+INFO: fsg_lextree.c(110): Allocated 258 bytes (0 KiB) for left and right context phones
+INFO: fsg_lextree.c(256): 29 HMM nodes in lextree (13 leaves)
+INFO: fsg_lextree.c(259): Allocated 3480 bytes (3 KiB) for all lextree nodes
+INFO: fsg_lextree.c(262): Allocated 1560 bytes (1 KiB) for lextree leafnodes
+ERROR: "cmd_ln.c", line 938: Unknown argument: -adcdev
+INFO: cmn_prior.c(131): cmn_prior_update: from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 41.88  0.72  7.99  1.49  2.01  9.59  5.49  0.71  1.02 -2.96 -10.85 -8.06 -5.30 >
+INFO: fsg_search.c(859): 225 frames, 1494 HMMs (6/fr), 7092 senones (31/fr), 224 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.37 CPU 0.164 xRT
+INFO: fsg_search.c(871): fsg 4.11 wall 1.817 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 225
+INFO: cmn_prior.c(131): cmn_prior_update: from < 41.88  0.72  7.99  1.49  2.01  9.59  5.49  0.71  1.02 -2.96 -10.85 -8.06 -5.30 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 45.30 -0.16  7.64  3.22  1.50  8.70 -1.50  2.83 -0.53 -2.03 -12.47 -6.90 -7.09 >
+INFO: fsg_search.c(859): 206 frames, 972 HMMs (4/fr), 4111 senones (19/fr), 386 history entries (1/fr)
+
+INFO: fsg_search.c(869): fsg 0.29 CPU 0.140 xRT
+INFO: fsg_search.c(871): fsg 4.03 wall 1.948 xRT
+INFO: fsg_search.c(265): TOTAL fsg 0.66 CPU 0.153 xRT
+INFO: fsg_search.c(268): TOTAL fsg 8.14 wall 1.888 xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			current		current
+-cmninit		8.0		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					./dictionary/en.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					/usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2
+-input_endian		little		little
+-jsgf					./dictionary/prometheus.jsgf
+-keyphrase				
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='current', VARNORM='no', AGC='none'
+INFO: cmn.c(143): mean[0]= 12.00, mean[1..12]= 0.0
+INFO: acmod.c(164): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(206): Reading HMM transition probability matrices: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/means
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/variances
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(354): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(835): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138624 * 20 bytes (2707 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: ./dictionary/en.dict
+ERROR: "dict.c", line 185: Line 33629: No pronunciation for word 'd'; ignored
+ERROR: "dict.c", line 205: Line 86237: Failed to add the word 'oh' (duplicate?); ignored
+INFO: dict.c(213): Allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134521 words read
+INFO: dict.c(358): Reading filler dictionary: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/noisedict
+INFO: dict.c(213): Allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 21336 bytes (20 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 21336 bytes (20 KiB) for single-phone word triphones
+INFO: jsgf.c(706): Defined rule: PUBLIC <prometheus.baseCommand>
+INFO: jsgf.c(706): Defined rule: <prometheus.command>
+INFO: fsg_model.c(208): Computing transitive closure for null transitions
+INFO: fsg_model.c(270): 0 null transitions added
+INFO: fsg_search.c(227): FSG(beam: -1080, pbeam: -1080, wbeam: -634; wip: -26, pip: 0)
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for [NOISE] to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_search.c(173): Added 0 alternate word transitions
+INFO: fsg_lextree.c(110): Allocated 258 bytes (0 KiB) for left and right context phones
+INFO: fsg_lextree.c(256): 29 HMM nodes in lextree (13 leaves)
+INFO: fsg_lextree.c(259): Allocated 3480 bytes (3 KiB) for all lextree nodes
+INFO: fsg_lextree.c(262): Allocated 1560 bytes (1 KiB) for lextree leafnodes
+ERROR: "cmd_ln.c", line 938: Unknown argument: -adcdev
+INFO: cmn_prior.c(131): cmn_prior_update: from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 41.26  1.22  9.85  5.57  3.72  8.11  5.19 -0.01 -3.14 -3.85 -11.99 -10.25 -4.71 >
+INFO: fsg_search.c(859): 105 frames, 1015 HMMs (9/fr), 3846 senones (36/fr), 134 history entries (1/fr)
+
+INFO: fsg_search.c(869): fsg 0.16 CPU 0.151 xRT
+INFO: fsg_search.c(871): fsg 2.51 wall 2.364 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 105
+INFO: cmn_prior.c(131): cmn_prior_update: from < 41.26  1.22  9.85  5.57  3.72  8.11  5.19 -0.01 -3.14 -3.85 -11.99 -10.25 -4.71 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 48.71 -3.02  7.62  7.36  2.45  8.59 -6.51  3.77 -1.40  0.25 -14.00 -5.11 -8.20 >
+INFO: fsg_search.c(859): 204 frames, 1330 HMMs (6/fr), 5979 senones (29/fr), 411 history entries (2/fr)
+
+INFO: fsg_search.c(869): fsg 0.30 CPU 0.146 xRT
+INFO: fsg_search.c(871): fsg 4.04 wall 1.970 xRT
+INFO: fsg_search.c(265): TOTAL fsg 0.46 CPU 0.149 xRT
+INFO: fsg_search.c(268): TOTAL fsg 6.55 wall 2.118 xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			current		current
+-cmninit		8.0		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					./dictionary/en.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					/usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2
+-input_endian		little		little
+-jsgf					./dictionary/prometheus.jsgf
+-keyphrase				
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='current', VARNORM='no', AGC='none'
+INFO: cmn.c(143): mean[0]= 12.00, mean[1..12]= 0.0
+INFO: acmod.c(164): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(206): Reading HMM transition probability matrices: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/means
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/variances
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(354): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(835): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138624 * 20 bytes (2707 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: ./dictionary/en.dict
+ERROR: "dict.c", line 185: Line 33629: No pronunciation for word 'd'; ignored
+ERROR: "dict.c", line 205: Line 86237: Failed to add the word 'oh' (duplicate?); ignored
+INFO: dict.c(213): Allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134521 words read
+INFO: dict.c(358): Reading filler dictionary: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/noisedict
+INFO: dict.c(213): Allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 21336 bytes (20 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 21336 bytes (20 KiB) for single-phone word triphones
+INFO: jsgf.c(706): Defined rule: PUBLIC <prometheus.baseCommand>
+INFO: jsgf.c(706): Defined rule: <prometheus.command>
+INFO: fsg_model.c(208): Computing transitive closure for null transitions
+INFO: fsg_model.c(270): 0 null transitions added
+INFO: fsg_search.c(227): FSG(beam: -1080, pbeam: -1080, wbeam: -634; wip: -26, pip: 0)
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for [NOISE] to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_search.c(173): Added 0 alternate word transitions
+INFO: fsg_lextree.c(110): Allocated 258 bytes (0 KiB) for left and right context phones
+INFO: fsg_lextree.c(256): 29 HMM nodes in lextree (13 leaves)
+INFO: fsg_lextree.c(259): Allocated 3480 bytes (3 KiB) for all lextree nodes
+INFO: fsg_lextree.c(262): Allocated 1560 bytes (1 KiB) for lextree leafnodes
+ERROR: "cmd_ln.c", line 938: Unknown argument: -adcdev
+INFO: cmn_prior.c(131): cmn_prior_update: from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 41.95  1.41  8.56  4.14  7.10 13.72  7.04  3.93  3.39 -3.86 -10.86 -7.20 -5.04 >
+INFO: fsg_search.c(859): 141 frames, 847 HMMs (6/fr), 4155 senones (29/fr), 140 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.20 CPU 0.141 xRT
+INFO: fsg_search.c(871): fsg 2.45 wall 1.725 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 141
+INFO: cmn_prior.c(131): cmn_prior_update: from < 41.95  1.41  8.56  4.14  7.10 13.72  7.04  3.93  3.39 -3.86 -10.86 -7.20 -5.04 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 48.24 -2.05  7.19  6.59  3.34 11.15 -3.91  5.10  1.25 -0.27 -11.49 -4.78 -5.83 >
+INFO: fsg_search.c(859): 204 frames, 1337 HMMs (6/fr), 5909 senones (28/fr), 464 history entries (2/fr)
+
+INFO: fsg_search.c(869): fsg 0.28 CPU 0.137 xRT
+INFO: fsg_search.c(871): fsg 4.03 wall 1.966 xRT
+INFO: fsg_search.c(265): TOTAL fsg 0.48 CPU 0.139 xRT
+INFO: fsg_search.c(268): TOTAL fsg 6.48 wall 1.878 xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			current		current
+-cmninit		8.0		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					./dictionary/en.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					/usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2
+-input_endian		little		little
+-jsgf					./dictionary/prometheus.jsgf
+-keyphrase				
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='current', VARNORM='no', AGC='none'
+INFO: cmn.c(143): mean[0]= 12.00, mean[1..12]= 0.0
+INFO: acmod.c(164): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(206): Reading HMM transition probability matrices: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/means
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/variances
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(354): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(835): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138624 * 20 bytes (2707 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: ./dictionary/en.dict
+ERROR: "dict.c", line 185: Line 33629: No pronunciation for word 'd'; ignored
+ERROR: "dict.c", line 205: Line 86237: Failed to add the word 'oh' (duplicate?); ignored
+INFO: dict.c(213): Allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134521 words read
+INFO: dict.c(358): Reading filler dictionary: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/noisedict
+INFO: dict.c(213): Allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 21336 bytes (20 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 21336 bytes (20 KiB) for single-phone word triphones
+INFO: jsgf.c(706): Defined rule: PUBLIC <prometheus.baseCommand>
+INFO: jsgf.c(706): Defined rule: <prometheus.command>
+INFO: fsg_model.c(208): Computing transitive closure for null transitions
+INFO: fsg_model.c(270): 0 null transitions added
+INFO: fsg_search.c(227): FSG(beam: -1080, pbeam: -1080, wbeam: -634; wip: -26, pip: 0)
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for [NOISE] to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_search.c(173): Added 0 alternate word transitions
+INFO: fsg_lextree.c(110): Allocated 258 bytes (0 KiB) for left and right context phones
+INFO: fsg_lextree.c(256): 29 HMM nodes in lextree (13 leaves)
+INFO: fsg_lextree.c(259): Allocated 3480 bytes (3 KiB) for all lextree nodes
+INFO: fsg_lextree.c(262): Allocated 1560 bytes (1 KiB) for lextree leafnodes
+ERROR: "cmd_ln.c", line 938: Unknown argument: -adcdev
+INFO: cmn_prior.c(131): cmn_prior_update: from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 42.35  0.88  7.36  5.09  7.05 11.47  3.89  0.61  6.58 -6.07 -10.33 -9.67 -6.61 >
+INFO: fsg_search.c(859): 98 frames, 646 HMMs (6/fr), 3001 senones (30/fr), 97 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.15 CPU 0.152 xRT
+INFO: fsg_search.c(871): fsg 2.39 wall 2.417 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 98
+INFO: cmn_prior.c(131): cmn_prior_update: from < 42.35  0.88  7.36  5.09  7.05 11.47  3.89  0.61  6.58 -6.07 -10.33 -9.67 -6.61 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 47.11 -8.43  5.66  6.36  0.23 12.27 -0.46  5.31  0.66  0.34 -11.97 -6.98 -5.70 >
+INFO: fsg_search.c(859): 296 frames, 2208 HMMs (7/fr), 10148 senones (34/fr), 295 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.57 CPU 0.192 xRT
+INFO: fsg_search.c(871): fsg 6.56 wall 2.210 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 296
+INFO: cmn_prior.c(131): cmn_prior_update: from < 47.11 -8.43  5.66  6.36  0.23 12.27 -0.46  5.31  0.66  0.34 -11.97 -6.98 -5.70 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 48.32 -10.06  5.14  5.60 -0.35 13.20 -2.32  6.25 -0.47  0.79 -12.88 -6.77 -7.32 >
+INFO: fsg_search.c(859): 137 frames, 771 HMMs (5/fr), 3958 senones (28/fr), 136 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.20 CPU 0.145 xRT
+INFO: fsg_search.c(871): fsg 3.20 wall 2.318 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 137
+INFO: cmn_prior.c(131): cmn_prior_update: from < 48.32 -10.06  5.14  5.60 -0.35 13.20 -2.32  6.25 -0.47  0.79 -12.88 -6.77 -7.32 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 46.43 -7.58  5.37  3.91 -0.81 12.61 -0.94  6.28  0.51 -0.29 -12.69 -7.23 -7.29 >
+INFO: fsg_search.c(859): 121 frames, 681 HMMs (5/fr), 3472 senones (28/fr), 120 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.23 CPU 0.189 xRT
+INFO: fsg_search.c(871): fsg 4.72 wall 3.871 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 121
+INFO: cmn_prior.c(99): cmn_prior_update: from < 46.43 -7.58  5.37  3.91 -0.81 12.61 -0.94  6.28  0.51 -0.29 -12.69 -7.23 -7.29 >
+INFO: cmn_prior.c(116): cmn_prior_update: to   < 45.44 -6.89  6.04  4.16 -0.62 12.49 -0.46  6.16  0.87 -0.49 -12.32 -7.15 -6.84 >
+INFO: cmn_prior.c(99): cmn_prior_update: from < 45.44 -6.89  6.04  4.16 -0.62 12.49 -0.46  6.16  0.87 -0.49 -12.32 -7.15 -6.84 >
+INFO: cmn_prior.c(116): cmn_prior_update: to   < 44.31 -5.13  6.44  4.92  0.75 11.31 -1.15  5.18  1.27 -0.64 -11.60 -6.23 -6.53 >
+INFO: cmn_prior.c(131): cmn_prior_update: from < 44.31 -5.13  6.44  4.92  0.75 11.31 -1.15  5.18  1.27 -0.64 -11.60 -6.23 -6.53 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 46.08 -4.44  5.94  5.33  0.11 10.00 -3.96  3.78  1.41  1.09 -11.92 -4.61 -5.06 >
+INFO: fsg_search.c(859): 561 frames, 3326 HMMs (5/fr), 16555 senones (29/fr), 751 history entries (1/fr)
+
+INFO: fsg_search.c(869): fsg 1.13 CPU 0.201 xRT
+INFO: fsg_search.c(871): fsg 25.83 wall 4.596 xRT
+INFO: fsg_search.c(265): TOTAL fsg 2.28 CPU 0.188 xRT
+INFO: fsg_search.c(268): TOTAL fsg 42.71 wall 3.521 xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			current		current
+-cmninit		8.0		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					./dictionary/en.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					/usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2
+-input_endian		little		little
+-jsgf					./dictionary/prometheus.jsgf
+-keyphrase				
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='current', VARNORM='no', AGC='none'
+INFO: cmn.c(143): mean[0]= 12.00, mean[1..12]= 0.0
+INFO: acmod.c(164): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(206): Reading HMM transition probability matrices: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/means
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/variances
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(354): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(835): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138624 * 20 bytes (2707 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: ./dictionary/en.dict
+ERROR: "dict.c", line 185: Line 33629: No pronunciation for word 'd'; ignored
+ERROR: "dict.c", line 205: Line 86237: Failed to add the word 'oh' (duplicate?); ignored
+INFO: dict.c(213): Allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134521 words read
+INFO: dict.c(358): Reading filler dictionary: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/noisedict
+INFO: dict.c(213): Allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 21336 bytes (20 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 21336 bytes (20 KiB) for single-phone word triphones
+INFO: jsgf.c(706): Defined rule: PUBLIC <prometheus.baseCommand>
+INFO: jsgf.c(706): Defined rule: <prometheus.command>
+INFO: fsg_model.c(208): Computing transitive closure for null transitions
+INFO: fsg_model.c(270): 0 null transitions added
+INFO: fsg_search.c(227): FSG(beam: -1080, pbeam: -1080, wbeam: -634; wip: -26, pip: 0)
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for [NOISE] to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_search.c(173): Added 0 alternate word transitions
+INFO: fsg_lextree.c(110): Allocated 258 bytes (0 KiB) for left and right context phones
+INFO: fsg_lextree.c(256): 29 HMM nodes in lextree (13 leaves)
+INFO: fsg_lextree.c(259): Allocated 3480 bytes (3 KiB) for all lextree nodes
+INFO: fsg_lextree.c(262): Allocated 1560 bytes (1 KiB) for lextree leafnodes
+ERROR: "cmd_ln.c", line 938: Unknown argument: -adcdev
+INFO: cmn_prior.c(131): cmn_prior_update: from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 44.33  3.84  5.98 -1.59  1.55 12.98  4.28  1.50  4.14 -2.81 -9.57 -5.76 -5.01 >
+INFO: fsg_search.c(859): 119 frames, 1283 HMMs (10/fr), 4607 senones (38/fr), 224 history entries (1/fr)
+
+INFO: fsg_search.c(869): fsg 0.20 CPU 0.167 xRT
+INFO: fsg_search.c(871): fsg 2.45 wall 2.041 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 119
+INFO: cmn_prior.c(131): cmn_prior_update: from < 44.33  3.84  5.98 -1.59  1.55 12.98  4.28  1.50  4.14 -2.81 -9.57 -5.76 -5.01 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 48.92  1.25  4.01  2.68 -1.80 12.70 -2.89  4.28  2.71 -0.69 -11.84 -4.43 -5.76 >
+INFO: fsg_search.c(859): 301 frames, 1444 HMMs (4/fr), 6258 senones (20/fr), 498 history entries (1/fr)
+
+INFO: fsg_search.c(869): fsg 0.35 CPU 0.116 xRT
+INFO: fsg_search.c(871): fsg 4.85 wall 1.605 xRT
+INFO: fsg_search.c(265): TOTAL fsg 0.55 CPU 0.131 xRT
+INFO: fsg_search.c(268): TOTAL fsg 7.30 wall 1.737 xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			current		current
+-cmninit		8.0		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					./dictionary/en.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					/usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2
+-input_endian		little		little
+-jsgf					./dictionary/prometheus.jsgf
+-keyphrase				
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='current', VARNORM='no', AGC='none'
+INFO: cmn.c(143): mean[0]= 12.00, mean[1..12]= 0.0
+INFO: acmod.c(164): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(206): Reading HMM transition probability matrices: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/means
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/variances
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(354): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(835): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138624 * 20 bytes (2707 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: ./dictionary/en.dict
+ERROR: "dict.c", line 185: Line 33629: No pronunciation for word 'd'; ignored
+ERROR: "dict.c", line 205: Line 86237: Failed to add the word 'oh' (duplicate?); ignored
+INFO: dict.c(213): Allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134521 words read
+INFO: dict.c(358): Reading filler dictionary: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/noisedict
+INFO: dict.c(213): Allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 21336 bytes (20 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 21336 bytes (20 KiB) for single-phone word triphones
+INFO: jsgf.c(706): Defined rule: PUBLIC <prometheus.baseCommand>
+INFO: jsgf.c(706): Defined rule: <prometheus.command>
+INFO: fsg_model.c(208): Computing transitive closure for null transitions
+INFO: fsg_model.c(270): 0 null transitions added
+INFO: fsg_search.c(227): FSG(beam: -1080, pbeam: -1080, wbeam: -634; wip: -26, pip: 0)
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for [NOISE] to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_search.c(173): Added 0 alternate word transitions
+INFO: fsg_lextree.c(110): Allocated 258 bytes (0 KiB) for left and right context phones
+INFO: fsg_lextree.c(256): 29 HMM nodes in lextree (13 leaves)
+INFO: fsg_lextree.c(259): Allocated 3480 bytes (3 KiB) for all lextree nodes
+INFO: fsg_lextree.c(262): Allocated 1560 bytes (1 KiB) for lextree leafnodes
+ERROR: "cmd_ln.c", line 938: Unknown argument: -adcdev
+INFO: cmn_prior.c(131): cmn_prior_update: from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 43.64  6.55  7.17  1.09 -3.06 13.93  2.82  4.73  6.79 -3.79 -10.37 -9.28 -2.09 >
+INFO: fsg_search.c(859): 365 frames, 3794 HMMs (10/fr), 14536 senones (39/fr), 430 history entries (1/fr)
+
+INFO: fsg_search.c(869): fsg 0.65 CPU 0.178 xRT
+INFO: fsg_search.c(871): fsg 6.64 wall 1.814 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 365
+INFO: cmn_prior.c(99): cmn_prior_update: from < 43.64  6.55  7.17  1.09 -3.06 13.93  2.82  4.73  6.79 -3.79 -10.37 -9.28 -2.09 >
+INFO: cmn_prior.c(116): cmn_prior_update: to   < 43.14  2.66  6.95  2.13 -4.39 14.18  2.48  5.85  6.22 -2.46 -9.98 -7.39 -1.71 >
+INFO: cmn_prior.c(99): cmn_prior_update: from < 43.14  2.66  6.95  2.13 -4.39 14.18  2.48  5.85  6.22 -2.46 -9.98 -7.39 -1.71 >
+INFO: cmn_prior.c(116): cmn_prior_update: to   < 41.27  2.12  6.86  2.18 -3.80 13.72  2.93  5.43  5.83 -3.04 -10.50 -7.12 -2.17 >
+INFO: cmn_prior.c(99): cmn_prior_update: from < 41.27  2.12  6.86  2.18 -3.80 13.72  2.93  5.43  5.83 -3.04 -10.50 -7.12 -2.17 >
+INFO: cmn_prior.c(116): cmn_prior_update: to   < 42.34 -1.15  8.81  0.81 -4.97 13.03  1.29  5.33  4.92 -3.28 -11.06 -8.62 -2.40 >
+INFO: cmn_prior.c(99): cmn_prior_update: from < 42.34 -1.15  8.81  0.81 -4.97 13.03  1.29  5.33  4.92 -3.28 -11.06 -8.62 -2.40 >
+INFO: cmn_prior.c(116): cmn_prior_update: to   < 40.50 -0.46  8.06  1.82 -3.68 13.37  1.99  4.16  5.45 -3.26 -10.16 -8.33 -2.83 >
+INFO: cmn_prior.c(131): cmn_prior_update: from < 40.50 -0.46  8.06  1.82 -3.68 13.37  1.99  4.16  5.45 -3.26 -10.16 -8.33 -2.83 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 39.33  0.39  7.45  2.32 -2.55 12.59  2.42  3.36  5.67 -3.22 -9.97 -7.72 -2.77 >
+INFO: fsg_search.c(859): 1491 frames, 10758 HMMs (7/fr), 48772 senones (32/fr), 1514 history entries (1/fr)
+
+INFO: fsg_search.c(869): fsg 2.53 CPU 0.170 xRT
+INFO: fsg_search.c(871): fsg 25.00 wall 1.676 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 1491
+INFO: cmn_prior.c(131): cmn_prior_update: from < 39.33  0.39  7.45  2.32 -2.55 12.59  2.42  3.36  5.67 -3.22 -9.97 -7.72 -2.77 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 39.19  0.61  7.16  2.38 -2.22 12.65  2.43  3.18  6.09 -3.56 -9.80 -7.46 -2.82 >
+INFO: fsg_search.c(859): 82 frames, 572 HMMs (6/fr), 2595 senones (31/fr), 81 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.17 CPU 0.205 xRT
+INFO: fsg_search.c(871): fsg 2.42 wall 2.912 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 82
+INFO: cmn_prior.c(99): cmn_prior_update: from < 39.19  0.61  7.16  2.38 -2.22 12.65  2.43  3.18  6.09 -3.56 -9.80 -7.46 -2.82 >
+INFO: cmn_prior.c(116): cmn_prior_update: to   < 39.15  0.30  7.14  2.39 -2.87 13.16  2.34  3.03  6.11 -4.10 -9.98 -7.92 -3.17 >
+INFO: cmn_prior.c(99): cmn_prior_update: from < 39.15  0.30  7.14  2.39 -2.87 13.16  2.34  3.03  6.11 -4.10 -9.98 -7.92 -3.17 >
+INFO: cmn_prior.c(116): cmn_prior_update: to   < 39.01 -0.32  7.01  3.86 -2.87 13.42  2.86  3.30  5.93 -4.28 -10.02 -7.28 -3.13 >
+INFO: cmn_prior.c(131): cmn_prior_update: from < 39.01 -0.32  7.01  3.86 -2.87 13.42  2.86  3.30  5.93 -4.28 -10.02 -7.28 -3.13 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 38.39  0.16  6.81  3.52 -2.34 12.99  2.77  3.33  5.74 -3.79 -9.80 -6.68 -3.19 >
+INFO: fsg_search.c(859): 439 frames, 5110 HMMs (11/fr), 17902 senones (40/fr), 847 history entries (1/fr)
+
+INFO: fsg_search.c(869): fsg 0.76 CPU 0.173 xRT
+INFO: fsg_search.c(871): fsg 7.53 wall 1.711 xRT
+INFO: cmn_prior.c(131): cmn_prior_update: from < 38.39  0.16  6.81  3.52 -2.34 12.99  2.77  3.33  5.74 -3.79 -9.80 -6.68 -3.19 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 38.75  0.33  6.24  2.77 -2.41 13.52  3.15  3.45  5.71 -3.59 -9.88 -6.56 -3.27 >
+INFO: fsg_search.c(859): 145 frames, 1421 HMMs (9/fr), 5047 senones (34/fr), 238 history entries (1/fr)
+
+INFO: fsg_search.c(869): fsg 0.27 CPU 0.185 xRT
+INFO: fsg_search.c(871): fsg 3.26 wall 2.236 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 145
+INFO: cmn_prior.c(99): cmn_prior_update: from < 38.75  0.33  6.24  2.77 -2.41 13.52  3.15  3.45  5.71 -3.59 -9.88 -6.56 -3.27 >
+INFO: cmn_prior.c(116): cmn_prior_update: to   < 38.65  0.31  6.18  2.73 -2.58 13.68  3.50  3.03  5.59 -4.02 -10.13 -6.85 -3.45 >
+INFO: cmn_prior.c(99): cmn_prior_update: from < 38.65  0.31  6.18  2.73 -2.58 13.68  3.50  3.03  5.59 -4.02 -10.13 -6.85 -3.45 >
+INFO: cmn_prior.c(116): cmn_prior_update: to   < 38.55 -1.29  7.37  2.67 -2.78 14.44  3.63  3.68  3.66 -3.96 -10.58 -7.52 -4.05 >
+INFO: cmn_prior.c(99): cmn_prior_update: from < 38.55 -1.29  7.37  2.67 -2.78 14.44  3.63  3.68  3.66 -3.96 -10.58 -7.52 -4.05 >
+INFO: cmn_prior.c(116): cmn_prior_update: to   < 38.98 -2.14  7.54  2.31 -1.53 14.69  3.69  4.71  3.09 -3.35 -10.71 -7.15 -4.27 >
+INFO: cmn_prior.c(131): cmn_prior_update: from < 38.98 -2.14  7.54  2.31 -1.53 14.69  3.69  4.71  3.09 -3.35 -10.71 -7.15 -4.27 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 38.15 -2.07  7.39  2.25 -1.48 14.38  3.63  4.62  3.03 -3.29 -10.50 -7.01 -4.18 >
+INFO: fsg_search.c(859): 677 frames, 9312 HMMs (13/fr), 30677 senones (45/fr), 1972 history entries (2/fr)
+
+INFO: fsg_search.c(869): fsg 1.21 CPU 0.178 xRT
+INFO: fsg_search.c(871): fsg 11.70 wall 1.725 xRT
+INFO: cmn_prior.c(99): cmn_prior_update: from < 38.15 -2.07  7.39  2.25 -1.48 14.38  3.63  4.62  3.03 -3.29 -10.50 -7.01 -4.18 >
+INFO: cmn_prior.c(116): cmn_prior_update: to   < 39.28 -2.12  7.54  1.44 -1.45 13.76  3.89  5.59  2.61 -2.30 -10.42 -7.30 -4.64 >
+INFO: cmn_prior.c(99): cmn_prior_update: from < 39.28 -2.12  7.54  1.44 -1.45 13.76  3.89  5.59  2.61 -2.30 -10.42 -7.30 -4.64 >
+INFO: cmn_prior.c(116): cmn_prior_update: to   < 39.38 -2.14  7.56  0.87 -0.84 13.23  4.74  5.78  2.95 -1.36 -10.65 -6.98 -4.95 >
+INFO: cmn_prior.c(131): cmn_prior_update: from < 39.38 -2.14  7.56  0.87 -0.84 13.23  4.74  5.78  2.95 -1.36 -10.65 -6.98 -4.95 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 38.82 -1.15  6.89  0.62 -1.38 13.17  5.32  5.58  3.45 -1.90 -10.52 -7.29 -5.23 >
+INFO: fsg_search.c(859): 783 frames, 16244 HMMs (20/fr), 48678 senones (62/fr), 4315 history entries (5/fr)
+
+INFO: fsg_search.c(869): fsg 1.58 CPU 0.202 xRT
+INFO: fsg_search.c(871): fsg 13.56 wall 1.730 xRT
+INFO: fsg_search.c(265): TOTAL fsg 7.17 CPU 0.180 xRT
+INFO: fsg_search.c(268): TOTAL fsg 70.11 wall 1.761 xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			current		current
+-cmninit		8.0		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					./dictionary/en.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					/usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2
+-input_endian		little		little
+-jsgf					./dictionary/prometheus.jsgf
+-keyphrase				
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='current', VARNORM='no', AGC='none'
+INFO: cmn.c(143): mean[0]= 12.00, mean[1..12]= 0.0
+INFO: acmod.c(164): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(206): Reading HMM transition probability matrices: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/means
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/variances
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(354): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(835): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138624 * 20 bytes (2707 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: ./dictionary/en.dict
+ERROR: "dict.c", line 185: Line 33629: No pronunciation for word 'd'; ignored
+ERROR: "dict.c", line 205: Line 86237: Failed to add the word 'oh' (duplicate?); ignored
+INFO: dict.c(213): Allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134521 words read
+INFO: dict.c(358): Reading filler dictionary: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/noisedict
+INFO: dict.c(213): Allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 21336 bytes (20 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 21336 bytes (20 KiB) for single-phone word triphones
+INFO: jsgf.c(706): Defined rule: PUBLIC <prometheus.baseCommand>
+INFO: jsgf.c(706): Defined rule: <prometheus.command>
+INFO: fsg_model.c(208): Computing transitive closure for null transitions
+INFO: fsg_model.c(270): 0 null transitions added
+INFO: fsg_search.c(227): FSG(beam: -1080, pbeam: -1080, wbeam: -634; wip: -26, pip: 0)
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for [NOISE] to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_search.c(173): Added 0 alternate word transitions
+INFO: fsg_lextree.c(110): Allocated 258 bytes (0 KiB) for left and right context phones
+INFO: fsg_lextree.c(256): 29 HMM nodes in lextree (13 leaves)
+INFO: fsg_lextree.c(259): Allocated 3480 bytes (3 KiB) for all lextree nodes
+INFO: fsg_lextree.c(262): Allocated 1560 bytes (1 KiB) for lextree leafnodes
+ERROR: "cmd_ln.c", line 938: Unknown argument: -adcdev
+INFO: cmn_prior.c(131): cmn_prior_update: from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 43.07  4.29  5.22  0.22  5.60 11.71  8.26  6.27  5.74 -2.79 -8.53 -7.14 -2.30 >
+INFO: fsg_search.c(859): 151 frames, 921 HMMs (6/fr), 4490 senones (29/fr), 150 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.22 CPU 0.145 xRT
+INFO: fsg_search.c(871): fsg 3.22 wall 2.120 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 151
+INFO: cmn_prior.c(131): cmn_prior_update: from < 43.07  4.29  5.22  0.22  5.60 11.71  8.26  6.27  5.74 -2.79 -8.53 -7.14 -2.30 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 46.90  1.55  5.72  3.90  3.01 11.68 -0.11  6.18  1.98  1.00 -9.64 -5.48 -3.88 >
+INFO: fsg_search.c(859): 284 frames, 1768 HMMs (6/fr), 7803 senones (27/fr), 506 history entries (1/fr)
+
+INFO: fsg_search.c(869): fsg 0.46 CPU 0.161 xRT
+INFO: fsg_search.c(871): fsg 4.94 wall 1.735 xRT
+INFO: fsg_search.c(265): TOTAL fsg 0.68 CPU 0.156 xRT
+INFO: fsg_search.c(268): TOTAL fsg 8.17 wall 1.878 xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			current		current
+-cmninit		8.0		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					./dictionary/en.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					/usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2
+-input_endian		little		little
+-jsgf					./dictionary/prometheus.jsgf
+-keyphrase				
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='current', VARNORM='no', AGC='none'
+INFO: cmn.c(143): mean[0]= 12.00, mean[1..12]= 0.0
+INFO: acmod.c(164): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(206): Reading HMM transition probability matrices: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/means
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/variances
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(354): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(835): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138624 * 20 bytes (2707 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: ./dictionary/en.dict
+ERROR: "dict.c", line 185: Line 33629: No pronunciation for word 'd'; ignored
+ERROR: "dict.c", line 205: Line 86237: Failed to add the word 'oh' (duplicate?); ignored
+INFO: dict.c(213): Allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134521 words read
+INFO: dict.c(358): Reading filler dictionary: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/noisedict
+INFO: dict.c(213): Allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 21336 bytes (20 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 21336 bytes (20 KiB) for single-phone word triphones
+INFO: jsgf.c(706): Defined rule: PUBLIC <prometheus.baseCommand>
+INFO: jsgf.c(706): Defined rule: <prometheus.command>
+INFO: fsg_model.c(208): Computing transitive closure for null transitions
+INFO: fsg_model.c(270): 0 null transitions added
+INFO: fsg_search.c(227): FSG(beam: -1080, pbeam: -1080, wbeam: -634; wip: -26, pip: 0)
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for [NOISE] to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_search.c(173): Added 0 alternate word transitions
+INFO: fsg_lextree.c(110): Allocated 258 bytes (0 KiB) for left and right context phones
+INFO: fsg_lextree.c(256): 29 HMM nodes in lextree (13 leaves)
+INFO: fsg_lextree.c(259): Allocated 3480 bytes (3 KiB) for all lextree nodes
+INFO: fsg_lextree.c(262): Allocated 1560 bytes (1 KiB) for lextree leafnodes
+ERROR: "cmd_ln.c", line 938: Unknown argument: -adcdev
+INFO: cmn_prior.c(131): cmn_prior_update: from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 49.16  9.35 11.69  6.10 -3.23  4.00  1.42  5.81 -9.55  2.87 -13.27 -5.00 -7.52 >
+INFO: fsg_search.c(859): 65 frames, 502 HMMs (7/fr), 2199 senones (33/fr), 64 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.10 CPU 0.152 xRT
+INFO: fsg_search.c(871): fsg 1.60 wall 2.424 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 65
+INFO: cmn_prior.c(131): cmn_prior_update: from < 49.16  9.35 11.69  6.10 -3.23  4.00  1.42  5.81 -9.55  2.87 -13.27 -5.00 -7.52 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 45.33  2.24  5.73  3.74  1.02  6.18 -0.06  4.74 -2.97  3.68 -9.93 -3.17 -8.48 >
+INFO: fsg_search.c(859): 122 frames, 747 HMMs (6/fr), 3464 senones (28/fr), 121 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.26 CPU 0.211 xRT
+INFO: fsg_search.c(871): fsg 4.75 wall 3.861 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 122
+INFO: cmn_prior.c(131): cmn_prior_update: from < 45.33  2.24  5.73  3.74  1.02  6.18 -0.06  4.74 -2.97  3.68 -9.93 -3.17 -8.48 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 43.04  0.54  6.19  2.41  2.06  8.19  1.41  4.39 -0.68  1.44 -10.89 -4.42 -7.24 >
+INFO: fsg_search.c(859): 133 frames, 695 HMMs (5/fr), 3588 senones (26/fr), 132 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.26 CPU 0.194 xRT
+INFO: fsg_search.c(871): fsg 6.25 wall 4.667 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 133
+INFO: cmn_prior.c(131): cmn_prior_update: from < 43.04  0.54  6.19  2.41  2.06  8.19  1.41  4.39 -0.68  1.44 -10.89 -4.42 -7.24 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 46.41 -1.65  5.70  2.40  1.27  8.08 -0.55  5.98  0.53  1.61 -12.67 -5.14 -5.90 >
+INFO: fsg_search.c(859): 456 frames, 2955 HMMs (6/fr), 13978 senones (30/fr), 590 history entries (1/fr)
+
+INFO: fsg_search.c(869): fsg 0.78 CPU 0.171 xRT
+INFO: fsg_search.c(871): fsg 9.02 wall 1.974 xRT
+INFO: fsg_search.c(265): TOTAL fsg 1.40 CPU 0.180 xRT
+INFO: fsg_search.c(268): TOTAL fsg 21.62 wall 2.787 xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			current		current
+-cmninit		8.0		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					./dictionary/en.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					/usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2
+-input_endian		little		little
+-jsgf					./dictionary/prometheus.jsgf
+-keyphrase				
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='current', VARNORM='no', AGC='none'
+INFO: cmn.c(143): mean[0]= 12.00, mean[1..12]= 0.0
+INFO: acmod.c(164): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(206): Reading HMM transition probability matrices: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/means
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/variances
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(354): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(835): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138624 * 20 bytes (2707 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: ./dictionary/en.dict
+ERROR: "dict.c", line 185: Line 33629: No pronunciation for word 'd'; ignored
+ERROR: "dict.c", line 205: Line 86237: Failed to add the word 'oh' (duplicate?); ignored
+INFO: dict.c(213): Allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134521 words read
+INFO: dict.c(358): Reading filler dictionary: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/noisedict
+INFO: dict.c(213): Allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 21336 bytes (20 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 21336 bytes (20 KiB) for single-phone word triphones
+INFO: jsgf.c(706): Defined rule: PUBLIC <prometheus.baseCommand>
+INFO: jsgf.c(706): Defined rule: <prometheus.command>
+INFO: fsg_model.c(208): Computing transitive closure for null transitions
+INFO: fsg_model.c(270): 0 null transitions added
+INFO: fsg_search.c(227): FSG(beam: -1080, pbeam: -1080, wbeam: -634; wip: -26, pip: 0)
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for [NOISE] to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_search.c(173): Added 0 alternate word transitions
+INFO: fsg_lextree.c(110): Allocated 258 bytes (0 KiB) for left and right context phones
+INFO: fsg_lextree.c(256): 29 HMM nodes in lextree (13 leaves)
+INFO: fsg_lextree.c(259): Allocated 3480 bytes (3 KiB) for all lextree nodes
+INFO: fsg_lextree.c(262): Allocated 1560 bytes (1 KiB) for lextree leafnodes
+ERROR: "cmd_ln.c", line 938: Unknown argument: -adcdev
+INFO: cmn_prior.c(131): cmn_prior_update: from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 56.62 -3.92  5.16  3.19 -2.48 11.11 -3.97  6.19  1.83  4.10 -10.88 -3.27 -3.49 >
+INFO: fsg_search.c(859): 277 frames, 2178 HMMs (7/fr), 9002 senones (32/fr), 525 history entries (1/fr)
+
+INFO: fsg_search.c(869): fsg 0.43 CPU 0.155 xRT
+INFO: fsg_search.c(871): fsg 4.92 wall 1.771 xRT
+INFO: fsg_search.c(265): TOTAL fsg 0.43 CPU 0.155 xRT
+INFO: fsg_search.c(268): TOTAL fsg 4.92 wall 1.777 xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			current		current
+-cmninit		8.0		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					./dictionary/en.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					/usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2
+-input_endian		little		little
+-jsgf					./dictionary/prometheus.jsgf
+-keyphrase				
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='current', VARNORM='no', AGC='none'
+INFO: cmn.c(143): mean[0]= 12.00, mean[1..12]= 0.0
+INFO: acmod.c(164): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(206): Reading HMM transition probability matrices: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/means
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/variances
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(354): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(835): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138624 * 20 bytes (2707 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: ./dictionary/en.dict
+ERROR: "dict.c", line 185: Line 33629: No pronunciation for word 'd'; ignored
+ERROR: "dict.c", line 205: Line 86237: Failed to add the word 'oh' (duplicate?); ignored
+INFO: dict.c(213): Allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134521 words read
+INFO: dict.c(358): Reading filler dictionary: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/noisedict
+INFO: dict.c(213): Allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 21336 bytes (20 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 21336 bytes (20 KiB) for single-phone word triphones
+INFO: jsgf.c(706): Defined rule: PUBLIC <prometheus.baseCommand>
+INFO: jsgf.c(706): Defined rule: <prometheus.command>
+INFO: fsg_model.c(208): Computing transitive closure for null transitions
+INFO: fsg_model.c(270): 0 null transitions added
+INFO: fsg_search.c(227): FSG(beam: -1080, pbeam: -1080, wbeam: -634; wip: -26, pip: 0)
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for [NOISE] to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_search.c(173): Added 0 alternate word transitions
+INFO: fsg_lextree.c(110): Allocated 258 bytes (0 KiB) for left and right context phones
+INFO: fsg_lextree.c(256): 29 HMM nodes in lextree (13 leaves)
+INFO: fsg_lextree.c(259): Allocated 3480 bytes (3 KiB) for all lextree nodes
+INFO: fsg_lextree.c(262): Allocated 1560 bytes (1 KiB) for lextree leafnodes
+ERROR: "cmd_ln.c", line 938: Unknown argument: -adcdev
+INFO: cmn_prior.c(131): cmn_prior_update: from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 41.53  1.66  6.47  2.26  3.70  8.51  5.26  2.64 -0.65 -4.23 -12.60 -9.35 -5.85 >
+INFO: fsg_search.c(859): 176 frames, 1115 HMMs (6/fr), 5316 senones (30/fr), 175 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.26 CPU 0.147 xRT
+INFO: fsg_search.c(871): fsg 3.25 wall 1.838 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 176
+INFO: cmn_prior.c(131): cmn_prior_update: from < 41.53  1.66  6.47  2.26  3.70  8.51  5.26  2.64 -0.65 -4.23 -12.60 -9.35 -5.85 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 40.14  2.86  4.94  1.62  2.61  5.57  4.70  1.61  0.30 -3.42 -12.12 -10.05 -4.50 >
+INFO: fsg_search.c(859): 162 frames, 913 HMMs (5/fr), 4709 senones (29/fr), 161 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.34 CPU 0.209 xRT
+INFO: fsg_search.c(871): fsg 8.58 wall 5.264 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 162
+INFO: cmn_prior.c(131): cmn_prior_update: from < 40.14  2.86  4.94  1.62  2.61  5.57  4.70  1.61  0.30 -3.42 -12.12 -10.05 -4.50 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 40.56 -1.21  7.22  2.09  2.57  7.33  4.73  2.76 -0.46 -1.94 -12.76 -8.40 -5.17 >
+INFO: fsg_search.c(859): 285 frames, 3084 HMMs (10/fr), 10984 senones (38/fr), 310 history entries (1/fr)
+
+INFO: fsg_search.c(869): fsg 0.63 CPU 0.220 xRT
+INFO: fsg_search.c(871): fsg 11.11 wall 3.886 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 285
+INFO: cmn_prior.c(131): cmn_prior_update: from < 40.56 -1.21  7.22  2.09  2.57  7.33  4.73  2.76 -0.46 -1.94 -12.76 -8.40 -5.17 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 40.29 -0.71  7.32  2.40  3.08  7.43  5.09  3.00  0.06 -1.58 -12.49 -7.92 -4.76 >
+INFO: fsg_search.c(859): 67 frames, 410 HMMs (6/fr), 2076 senones (30/fr), 66 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.22 CPU 0.324 xRT
+INFO: fsg_search.c(871): fsg 8.46 wall 12.440 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 67
+INFO: cmn_prior.c(99): cmn_prior_update: from < 40.29 -0.71  7.32  2.40  3.08  7.43  5.09  3.00  0.06 -1.58 -12.49 -7.92 -4.76 >
+INFO: cmn_prior.c(116): cmn_prior_update: to   < 40.45 -0.88  7.36  3.43  3.24  7.71  4.91  3.10  0.41 -0.75 -11.85 -7.36 -3.98 >
+INFO: cmn_prior.c(131): cmn_prior_update: from < 40.45 -0.88  7.36  3.43  3.24  7.71  4.91  3.10  0.41 -0.75 -11.85 -7.36 -3.98 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 39.33  0.11  7.65  3.48  3.63  7.41  4.67  3.06  1.02 -0.32 -11.25 -6.52 -3.60 >
+INFO: fsg_search.c(859): 209 frames, 1942 HMMs (9/fr), 7872 senones (37/fr), 208 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.39 CPU 0.186 xRT
+INFO: fsg_search.c(871): fsg 4.88 wall 2.323 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 209
+INFO: cmn_prior.c(131): cmn_prior_update: from < 39.33  0.11  7.65  3.48  3.63  7.41  4.67  3.06  1.02 -0.32 -11.25 -6.52 -3.60 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 39.38 -0.07  7.71  4.12  3.92  7.66  4.65  3.07  0.70 -0.42 -10.94 -6.41 -3.63 >
+INFO: fsg_search.c(859): 96 frames, 718 HMMs (7/fr), 3252 senones (33/fr), 95 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.19 CPU 0.196 xRT
+INFO: fsg_search.c(871): fsg 3.18 wall 3.282 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 96
+INFO: cmn_prior.c(99): cmn_prior_update: from < 39.38 -0.07  7.71  4.12  3.92  7.66  4.65  3.07  0.70 -0.42 -10.94 -6.41 -3.63 >
+INFO: cmn_prior.c(116): cmn_prior_update: to   < 39.36 -0.09  7.82  4.44  4.34  7.72  4.63  2.99  1.12 -0.17 -10.71 -6.16 -4.02 >
+INFO: cmn_prior.c(131): cmn_prior_update: from < 39.36 -0.09  7.82  4.44  4.34  7.72  4.63  2.99  1.12 -0.17 -10.71 -6.16 -4.02 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 38.40  0.14  7.80  4.39  4.37  7.58  4.63  2.84  1.23 -0.22 -10.49 -5.90 -3.99 >
+INFO: fsg_search.c(859): 104 frames, 918 HMMs (8/fr), 3782 senones (36/fr), 103 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.23 CPU 0.219 xRT
+INFO: fsg_search.c(871): fsg 4.73 wall 4.503 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 104
+INFO: cmn_prior.c(131): cmn_prior_update: from < 38.40  0.14  7.80  4.39  4.37  7.58  4.63  2.84  1.23 -0.22 -10.49 -5.90 -3.99 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 38.67  0.65  7.46  4.91  4.74  7.49  6.05  3.06  1.52 -0.86 -11.19 -7.09 -2.55 >
+INFO: fsg_search.c(859): 244 frames, 1871 HMMs (7/fr), 8346 senones (34/fr), 243 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.44 CPU 0.180 xRT
+INFO: fsg_search.c(871): fsg 5.69 wall 2.322 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 244
+INFO: cmn_prior.c(99): cmn_prior_update: from < 38.67  0.65  7.46  4.91  4.74  7.49  6.05  3.06  1.52 -0.86 -11.19 -7.09 -2.55 >
+INFO: cmn_prior.c(116): cmn_prior_update: to   < 38.70  0.93  7.47  4.80  4.73  7.50  5.95  2.98  1.64 -0.92 -11.18 -6.98 -2.40 >
+INFO: cmn_prior.c(131): cmn_prior_update: from < 38.70  0.93  7.47  4.80  4.73  7.50  5.95  2.98  1.64 -0.92 -11.18 -6.98 -2.40 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 42.82 -0.35  7.61  4.62  2.53  9.60  4.12  3.56  0.17  0.52 -10.04 -6.83 -3.13 >
+INFO: fsg_search.c(859): 256 frames, 3279 HMMs (12/fr), 11127 senones (43/fr), 634 history entries (2/fr)
+
+INFO: fsg_search.c(869): fsg 0.45 CPU 0.175 xRT
+INFO: fsg_search.c(871): fsg 4.94 wall 1.923 xRT
+INFO: cmn_prior.c(99): cmn_prior_update: from < 42.82 -0.35  7.61  4.62  2.53  9.60  4.12  3.56  0.17  0.52 -10.04 -6.83 -3.13 >
+INFO: cmn_prior.c(116): cmn_prior_update: to   < 42.38 -0.20  7.74  4.88  3.07  9.76  3.91  3.45  0.37  0.42 -10.06 -6.69 -3.12 >
+INFO: cmn_prior.c(99): cmn_prior_update: from < 42.38 -0.20  7.74  4.88  3.07  9.76  3.91  3.45  0.37  0.42 -10.06 -6.69 -3.12 >
+INFO: cmn_prior.c(116): cmn_prior_update: to   < 53.22 -3.05  4.80  4.54 -0.64  8.33 -1.06  2.57 -0.07  1.54 -6.24 -4.10 -4.23 >
+INFO: cmn_prior.c(131): cmn_prior_update: from < 53.22 -3.05  4.80  4.54 -0.64  8.33 -1.06  2.57 -0.07  1.54 -6.24 -4.10 -4.23 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 56.03 -4.70  3.34  4.91 -3.11  6.99 -3.38  2.89  1.09  1.44 -5.36 -3.97 -3.72 >
+INFO: fsg_search.c(859): 521 frames, 3543 HMMs (6/fr), 16384 senones (31/fr), 733 history entries (1/fr)
+
+INFO: fsg_search.c(869): fsg 0.94 CPU 0.180 xRT
+INFO: fsg_search.c(871): fsg 12.92 wall 2.476 xRT
+INFO: fsg_search.c(265): TOTAL fsg 4.09 CPU 0.193 xRT
+INFO: fsg_search.c(268): TOTAL fsg 67.75 wall 3.196 xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			current		current
+-cmninit		8.0		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					./dictionary/en.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					/usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2
+-input_endian		little		little
+-jsgf					./dictionary/prometheus.jsgf
+-keyphrase				
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='current', VARNORM='no', AGC='none'
+INFO: cmn.c(143): mean[0]= 12.00, mean[1..12]= 0.0
+INFO: acmod.c(164): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(206): Reading HMM transition probability matrices: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/means
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/variances
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(354): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(835): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138624 * 20 bytes (2707 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: ./dictionary/en.dict
+ERROR: "dict.c", line 185: Line 33629: No pronunciation for word 'd'; ignored
+ERROR: "dict.c", line 205: Line 86237: Failed to add the word 'oh' (duplicate?); ignored
+INFO: dict.c(213): Allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134521 words read
+INFO: dict.c(358): Reading filler dictionary: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/noisedict
+INFO: dict.c(213): Allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 21336 bytes (20 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 21336 bytes (20 KiB) for single-phone word triphones
+INFO: jsgf.c(706): Defined rule: PUBLIC <prometheus.baseCommand>
+INFO: jsgf.c(706): Defined rule: <prometheus.command>
+INFO: fsg_model.c(208): Computing transitive closure for null transitions
+INFO: fsg_model.c(270): 0 null transitions added
+INFO: fsg_search.c(227): FSG(beam: -1080, pbeam: -1080, wbeam: -634; wip: -26, pip: 0)
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for [NOISE] to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_search.c(173): Added 0 alternate word transitions
+INFO: fsg_lextree.c(110): Allocated 258 bytes (0 KiB) for left and right context phones
+INFO: fsg_lextree.c(256): 29 HMM nodes in lextree (13 leaves)
+INFO: fsg_lextree.c(259): Allocated 3480 bytes (3 KiB) for all lextree nodes
+INFO: fsg_lextree.c(262): Allocated 1560 bytes (1 KiB) for lextree leafnodes
+ERROR: "cmd_ln.c", line 938: Unknown argument: -adcdev
+INFO: cmn_prior.c(131): cmn_prior_update: from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 51.16 -4.18  4.09  3.93 -2.13  4.44 -5.42 -0.34 -5.01 -1.35 -10.29 -5.96 -5.86 >
+INFO: fsg_search.c(859): 432 frames, 4842 HMMs (11/fr), 15803 senones (36/fr), 1217 history entries (2/fr)
+
+INFO: fsg_search.c(869): fsg 0.58 CPU 0.134 xRT
+INFO: fsg_search.c(871): fsg 7.32 wall 1.689 xRT
+INFO: fsg_search.c(265): TOTAL fsg 0.58 CPU 0.134 xRT
+INFO: fsg_search.c(268): TOTAL fsg 7.32 wall 1.693 xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			current		current
+-cmninit		8.0		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					./dictionary/en.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					/usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2
+-input_endian		little		little
+-jsgf					./dictionary/prometheus.jsgf
+-keyphrase				
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='current', VARNORM='no', AGC='none'
+INFO: cmn.c(143): mean[0]= 12.00, mean[1..12]= 0.0
+INFO: acmod.c(164): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(206): Reading HMM transition probability matrices: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/means
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/variances
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(354): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(835): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138624 * 20 bytes (2707 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: ./dictionary/en.dict
+ERROR: "dict.c", line 185: Line 33629: No pronunciation for word 'd'; ignored
+ERROR: "dict.c", line 205: Line 86237: Failed to add the word 'oh' (duplicate?); ignored
+INFO: dict.c(213): Allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134521 words read
+INFO: dict.c(358): Reading filler dictionary: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/noisedict
+INFO: dict.c(213): Allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 21336 bytes (20 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 21336 bytes (20 KiB) for single-phone word triphones
+INFO: jsgf.c(706): Defined rule: PUBLIC <prometheus.baseCommand>
+INFO: jsgf.c(706): Defined rule: <prometheus.command>
+INFO: fsg_model.c(208): Computing transitive closure for null transitions
+INFO: fsg_model.c(270): 0 null transitions added
+INFO: fsg_search.c(227): FSG(beam: -1080, pbeam: -1080, wbeam: -634; wip: -26, pip: 0)
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for [NOISE] to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_search.c(173): Added 0 alternate word transitions
+INFO: fsg_lextree.c(110): Allocated 258 bytes (0 KiB) for left and right context phones
+INFO: fsg_lextree.c(256): 29 HMM nodes in lextree (13 leaves)
+INFO: fsg_lextree.c(259): Allocated 3480 bytes (3 KiB) for all lextree nodes
+INFO: fsg_lextree.c(262): Allocated 1560 bytes (1 KiB) for lextree leafnodes
+ERROR: "cmd_ln.c", line 938: Unknown argument: -adcdev
+INFO: cmn_prior.c(131): cmn_prior_update: from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 45.58 -6.37 10.40  6.03  0.69  8.78 -1.69 -1.26 -4.26 -2.32 -11.72 -5.79 -7.25 >
+INFO: fsg_search.c(859): 206 frames, 1357 HMMs (6/fr), 6425 senones (31/fr), 205 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.29 CPU 0.140 xRT
+INFO: fsg_search.c(871): fsg 4.03 wall 1.949 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 206
+INFO: cmn_prior.c(131): cmn_prior_update: from < 45.58 -6.37 10.40  6.03  0.69  8.78 -1.69 -1.26 -4.26 -2.32 -11.72 -5.79 -7.25 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 44.49 -5.34  9.10  5.44  0.72  7.81 -1.73 -1.37 -3.85 -2.05 -10.84 -5.63 -6.72 >
+INFO: fsg_search.c(859): 73 frames, 496 HMMs (6/fr), 2220 senones (30/fr), 72 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.15 CPU 0.203 xRT
+INFO: fsg_search.c(871): fsg 3.14 wall 4.238 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 73
+INFO: cmn_prior.c(131): cmn_prior_update: from < 44.49 -5.34  9.10  5.44  0.72  7.81 -1.73 -1.37 -3.85 -2.05 -10.84 -5.63 -6.72 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 43.48 -4.40  8.76  4.82  0.63  7.44 -0.77 -1.32 -4.01 -2.60 -10.52 -5.57 -6.53 >
+INFO: fsg_search.c(859): 69 frames, 371 HMMs (5/fr), 1868 senones (27/fr), 68 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.14 CPU 0.200 xRT
+INFO: fsg_search.c(871): fsg 3.14 wall 4.481 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 69
+INFO: cmn_prior.c(131): cmn_prior_update: from < 43.48 -4.40  8.76  4.82  0.63  7.44 -0.77 -1.32 -4.01 -2.60 -10.52 -5.57 -6.53 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 42.71 -3.84  8.60  4.26  0.86  6.57 -0.81 -1.54 -4.16 -3.18 -10.64 -5.85 -6.17 >
+INFO: fsg_search.c(859): 74 frames, 390 HMMs (5/fr), 1989 senones (26/fr), 73 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.17 CPU 0.227 xRT
+INFO: fsg_search.c(871): fsg 6.91 wall 9.213 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 74
+INFO: cmn_prior.c(131): cmn_prior_update: from < 42.71 -3.84  8.60  4.26  0.86  6.57 -0.81 -1.54 -4.16 -3.18 -10.64 -5.85 -6.17 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 41.72 -3.18  9.58  3.66  1.88  6.39 -0.41 -1.09 -3.71 -2.94 -10.81 -5.41 -6.05 >
+INFO: fsg_search.c(859): 80 frames, 522 HMMs (6/fr), 2483 senones (31/fr), 79 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.15 CPU 0.185 xRT
+INFO: fsg_search.c(871): fsg 3.15 wall 3.893 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 80
+INFO: cmn_prior.c(131): cmn_prior_update: from < 41.72 -3.18  9.58  3.66  1.88  6.39 -0.41 -1.09 -3.71 -2.94 -10.81 -5.41 -6.05 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 41.59 -3.08  9.36  4.03  1.73  6.60 -0.18 -0.47 -3.40 -3.20 -10.89 -5.66 -5.44 >
+INFO: fsg_search.c(859): 71 frames, 374 HMMs (5/fr), 1909 senones (26/fr), 70 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.16 CPU 0.222 xRT
+INFO: fsg_search.c(871): fsg 5.40 wall 7.497 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 71
+INFO: cmn_prior.c(131): cmn_prior_update: from < 41.59 -3.08  9.36  4.03  1.73  6.60 -0.18 -0.47 -3.40 -3.20 -10.89 -5.66 -5.44 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 40.45 -2.01  9.13  4.03  2.48  5.97 -0.08 -0.71 -2.89 -3.90 -10.51 -5.99 -5.25 >
+INFO: fsg_search.c(859): 169 frames, 902 HMMs (5/fr), 4602 senones (27/fr), 168 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.31 CPU 0.182 xRT
+INFO: fsg_search.c(871): fsg 5.55 wall 3.264 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 169
+INFO: cmn_prior.c(99): cmn_prior_update: from < 40.45 -2.01  9.13  4.03  2.48  5.97 -0.08 -0.71 -2.89 -3.90 -10.51 -5.99 -5.25 >
+INFO: cmn_prior.c(116): cmn_prior_update: to   < 40.55 -1.86  8.56  3.66  2.49  5.93  0.04 -0.55 -2.90 -3.85 -10.52 -5.98 -5.35 >
+INFO: cmn_prior.c(131): cmn_prior_update: from < 40.55 -1.86  8.56  3.66  2.49  5.93  0.04 -0.55 -2.90 -3.85 -10.52 -5.98 -5.35 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 39.21 -1.27  8.68  3.64  2.74  5.65  0.08 -0.46 -2.70 -4.13 -10.34 -5.88 -5.32 >
+INFO: fsg_search.c(859): 79 frames, 620 HMMs (7/fr), 2600 senones (32/fr), 78 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.21 CPU 0.262 xRT
+INFO: fsg_search.c(871): fsg 6.95 wall 8.686 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 79
+INFO: cmn_prior.c(131): cmn_prior_update: from < 39.21 -1.27  8.68  3.64  2.74  5.65  0.08 -0.46 -2.70 -4.13 -10.34 -5.88 -5.32 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 46.11 -3.55  5.48  5.69  0.56  4.70 -3.72 -0.15 -2.50 -2.27 -9.80 -4.96 -4.88 >
+INFO: fsg_search.c(859): 219 frames, 1801 HMMs (8/fr), 7535 senones (34/fr), 638 history entries (2/fr)
+
+INFO: fsg_search.c(869): fsg 0.57 CPU 0.259 xRT
+INFO: fsg_search.c(871): fsg 13.29 wall 6.041 xRT
+INFO: fsg_search.c(265): TOTAL fsg 2.15 CPU 0.207 xRT
+INFO: fsg_search.c(268): TOTAL fsg 51.55 wall 4.957 xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			current		current
+-cmninit		8.0		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					./dictionary/en.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					/usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2
+-input_endian		little		little
+-jsgf					./dictionary/prometheus.jsgf
+-keyphrase				
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='current', VARNORM='no', AGC='none'
+INFO: cmn.c(143): mean[0]= 12.00, mean[1..12]= 0.0
+INFO: acmod.c(164): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(206): Reading HMM transition probability matrices: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/means
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/variances
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(354): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(835): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138624 * 20 bytes (2707 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: ./dictionary/en.dict
+ERROR: "dict.c", line 185: Line 33629: No pronunciation for word 'd'; ignored
+ERROR: "dict.c", line 205: Line 86237: Failed to add the word 'oh' (duplicate?); ignored
+INFO: dict.c(213): Allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134521 words read
+INFO: dict.c(358): Reading filler dictionary: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/noisedict
+INFO: dict.c(213): Allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 21336 bytes (20 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 21336 bytes (20 KiB) for single-phone word triphones
+INFO: jsgf.c(706): Defined rule: PUBLIC <prometheus.baseCommand>
+INFO: jsgf.c(706): Defined rule: <prometheus.command>
+INFO: fsg_model.c(208): Computing transitive closure for null transitions
+INFO: fsg_model.c(270): 0 null transitions added
+INFO: fsg_search.c(227): FSG(beam: -1080, pbeam: -1080, wbeam: -634; wip: -26, pip: 0)
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for [NOISE] to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_search.c(173): Added 0 alternate word transitions
+INFO: fsg_lextree.c(110): Allocated 258 bytes (0 KiB) for left and right context phones
+INFO: fsg_lextree.c(256): 29 HMM nodes in lextree (13 leaves)
+INFO: fsg_lextree.c(259): Allocated 3480 bytes (3 KiB) for all lextree nodes
+INFO: fsg_lextree.c(262): Allocated 1560 bytes (1 KiB) for lextree leafnodes
+ERROR: "cmd_ln.c", line 938: Unknown argument: -adcdev
+INFO: cmn_prior.c(131): cmn_prior_update: from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 50.06  0.50  3.93  4.44 -2.49  9.56 -3.73  5.14  2.57 -2.84 -7.91 -3.60 -5.95 >
+INFO: fsg_search.c(859): 323 frames, 2552 HMMs (7/fr), 10599 senones (32/fr), 797 history entries (2/fr)
+
+INFO: fsg_search.c(869): fsg 0.48 CPU 0.148 xRT
+INFO: fsg_search.c(871): fsg 5.73 wall 1.769 xRT
+INFO: fsg_search.c(265): TOTAL fsg 0.48 CPU 0.149 xRT
+INFO: fsg_search.c(268): TOTAL fsg 5.73 wall 1.775 xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			current		current
+-cmninit		8.0		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					./dictionary/en.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					/usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2
+-input_endian		little		little
+-jsgf					./dictionary/prometheus.jsgf
+-keyphrase				
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='current', VARNORM='no', AGC='none'
+INFO: cmn.c(143): mean[0]= 12.00, mean[1..12]= 0.0
+INFO: acmod.c(164): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(206): Reading HMM transition probability matrices: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/means
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/variances
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(354): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(835): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138624 * 20 bytes (2707 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: ./dictionary/en.dict
+ERROR: "dict.c", line 185: Line 33629: No pronunciation for word 'd'; ignored
+ERROR: "dict.c", line 205: Line 86237: Failed to add the word 'oh' (duplicate?); ignored
+INFO: dict.c(213): Allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134521 words read
+INFO: dict.c(358): Reading filler dictionary: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/noisedict
+INFO: dict.c(213): Allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 21336 bytes (20 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 21336 bytes (20 KiB) for single-phone word triphones
+INFO: jsgf.c(706): Defined rule: PUBLIC <prometheus.baseCommand>
+INFO: jsgf.c(706): Defined rule: <prometheus.command>
+INFO: fsg_model.c(208): Computing transitive closure for null transitions
+INFO: fsg_model.c(270): 0 null transitions added
+INFO: fsg_search.c(227): FSG(beam: -1080, pbeam: -1080, wbeam: -634; wip: -26, pip: 0)
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for [NOISE] to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_search.c(173): Added 0 alternate word transitions
+INFO: fsg_lextree.c(110): Allocated 258 bytes (0 KiB) for left and right context phones
+INFO: fsg_lextree.c(256): 29 HMM nodes in lextree (13 leaves)
+INFO: fsg_lextree.c(259): Allocated 3480 bytes (3 KiB) for all lextree nodes
+INFO: fsg_lextree.c(262): Allocated 1560 bytes (1 KiB) for lextree leafnodes
+ERROR: "cmd_ln.c", line 938: Unknown argument: -adcdev
+INFO: cmn_prior.c(131): cmn_prior_update: from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 43.89  0.61  6.12  4.45 -6.15  9.76 -3.19  0.61  1.50 -9.38 -11.31 -8.01 -5.91 >
+INFO: fsg_search.c(859): 552 frames, 2855 HMMs (5/fr), 11797 senones (21/fr), 885 history entries (1/fr)
+
+INFO: fsg_search.c(869): fsg 0.64 CPU 0.116 xRT
+INFO: fsg_search.c(871): fsg 8.88 wall 1.605 xRT
+INFO: fsg_search.c(265): TOTAL fsg 0.64 CPU 0.116 xRT
+INFO: fsg_search.c(268): TOTAL fsg 8.88 wall 1.608 xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			current		current
+-cmninit		8.0		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					./dictionary/en.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					/usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2
+-input_endian		little		little
+-jsgf					./dictionary/prometheus.jsgf
+-keyphrase				
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='current', VARNORM='no', AGC='none'
+INFO: cmn.c(143): mean[0]= 12.00, mean[1..12]= 0.0
+INFO: acmod.c(164): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(206): Reading HMM transition probability matrices: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/means
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/variances
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(354): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(835): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138624 * 20 bytes (2707 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: ./dictionary/en.dict
+ERROR: "dict.c", line 185: Line 33629: No pronunciation for word 'd'; ignored
+ERROR: "dict.c", line 205: Line 86237: Failed to add the word 'oh' (duplicate?); ignored
+INFO: dict.c(213): Allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134521 words read
+INFO: dict.c(358): Reading filler dictionary: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/noisedict
+INFO: dict.c(213): Allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 21336 bytes (20 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 21336 bytes (20 KiB) for single-phone word triphones
+INFO: jsgf.c(706): Defined rule: PUBLIC <prometheus.baseCommand>
+INFO: jsgf.c(706): Defined rule: <prometheus.command>
+INFO: fsg_model.c(208): Computing transitive closure for null transitions
+INFO: fsg_model.c(270): 0 null transitions added
+INFO: fsg_search.c(227): FSG(beam: -1080, pbeam: -1080, wbeam: -634; wip: -26, pip: 0)
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for [NOISE] to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_search.c(173): Added 0 alternate word transitions
+INFO: fsg_lextree.c(110): Allocated 258 bytes (0 KiB) for left and right context phones
+INFO: fsg_lextree.c(256): 29 HMM nodes in lextree (13 leaves)
+INFO: fsg_lextree.c(259): Allocated 3480 bytes (3 KiB) for all lextree nodes
+INFO: fsg_lextree.c(262): Allocated 1560 bytes (1 KiB) for lextree leafnodes
+ERROR: "cmd_ln.c", line 938: Unknown argument: -adcdev
+INFO: cmn_prior.c(131): cmn_prior_update: from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 41.90  5.66  7.76  0.89  3.60  7.37  5.03 -1.45  3.04 -5.60 -7.77 -7.18 -2.72 >
+INFO: fsg_search.c(859): 174 frames, 1182 HMMs (6/fr), 5366 senones (30/fr), 173 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.28 CPU 0.160 xRT
+INFO: fsg_search.c(871): fsg 3.27 wall 1.869 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 174
+INFO: cmn_prior.c(131): cmn_prior_update: from < 41.90  5.66  7.76  0.89  3.60  7.37  5.03 -1.45  3.04 -5.60 -7.77 -7.18 -2.72 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 41.09  4.67  7.89  1.41  2.74  8.41  4.99 -0.66  2.81 -5.19 -8.51 -7.06 -3.62 >
+INFO: fsg_search.c(859): 72 frames, 366 HMMs (5/fr), 1863 senones (25/fr), 71 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.15 CPU 0.205 xRT
+INFO: fsg_search.c(871): fsg 1.64 wall 2.249 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 72
+INFO: cmn_prior.c(131): cmn_prior_update: from < 41.09  4.67  7.89  1.41  2.74  8.41  4.99 -0.66  2.81 -5.19 -8.51 -7.06 -3.62 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 49.56 -0.06  3.11  3.56  0.49  4.97 -2.18  0.90  0.66 -4.25 -6.71 -5.57 -3.74 >
+INFO: fsg_search.c(859): 242 frames, 1915 HMMs (7/fr), 8134 senones (33/fr), 586 history entries (2/fr)
+
+INFO: fsg_search.c(869): fsg 0.44 CPU 0.181 xRT
+INFO: fsg_search.c(871): fsg 4.19 wall 1.724 xRT
+INFO: fsg_search.c(265): TOTAL fsg 0.87 CPU 0.178 xRT
+INFO: fsg_search.c(268): TOTAL fsg 9.10 wall 1.865 xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			current		current
+-cmninit		8.0		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					./dictionary/en.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					/usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2
+-input_endian		little		little
+-jsgf					./dictionary/prometheus.jsgf
+-keyphrase				
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='current', VARNORM='no', AGC='none'
+INFO: cmn.c(143): mean[0]= 12.00, mean[1..12]= 0.0
+INFO: acmod.c(164): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(206): Reading HMM transition probability matrices: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/means
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/variances
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(354): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(835): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138624 * 20 bytes (2707 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: ./dictionary/en.dict
+ERROR: "dict.c", line 185: Line 33629: No pronunciation for word 'd'; ignored
+ERROR: "dict.c", line 205: Line 86237: Failed to add the word 'oh' (duplicate?); ignored
+INFO: dict.c(213): Allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134521 words read
+INFO: dict.c(358): Reading filler dictionary: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/noisedict
+INFO: dict.c(213): Allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 21336 bytes (20 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 21336 bytes (20 KiB) for single-phone word triphones
+INFO: jsgf.c(706): Defined rule: PUBLIC <prometheus.baseCommand>
+INFO: jsgf.c(706): Defined rule: <prometheus.command>
+INFO: fsg_model.c(208): Computing transitive closure for null transitions
+INFO: fsg_model.c(270): 0 null transitions added
+INFO: fsg_search.c(227): FSG(beam: -1080, pbeam: -1080, wbeam: -634; wip: -26, pip: 0)
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for [NOISE] to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_search.c(173): Added 0 alternate word transitions
+INFO: fsg_lextree.c(110): Allocated 258 bytes (0 KiB) for left and right context phones
+INFO: fsg_lextree.c(256): 29 HMM nodes in lextree (13 leaves)
+INFO: fsg_lextree.c(259): Allocated 3480 bytes (3 KiB) for all lextree nodes
+INFO: fsg_lextree.c(262): Allocated 1560 bytes (1 KiB) for lextree leafnodes
+ERROR: "cmd_ln.c", line 938: Unknown argument: -adcdev
+INFO: cmn_prior.c(131): cmn_prior_update: from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 46.75  1.46  5.96  6.97  0.10  5.99 -4.26 -2.20  1.34 -2.62 -10.33 -5.88 -6.96 >
+INFO: fsg_search.c(859): 348 frames, 2331 HMMs (6/fr), 9484 senones (27/fr), 812 history entries (2/fr)
+
+INFO: fsg_search.c(869): fsg 0.44 CPU 0.126 xRT
+INFO: fsg_search.c(871): fsg 5.68 wall 1.628 xRT
+INFO: fsg_search.c(265): TOTAL fsg 0.44 CPU 0.126 xRT
+INFO: fsg_search.c(268): TOTAL fsg 5.68 wall 1.633 xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			current		current
+-cmninit		8.0		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					./dictionary/en.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					/usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2
+-input_endian		little		little
+-jsgf					./dictionary/prometheus.jsgf
+-keyphrase				
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='current', VARNORM='no', AGC='none'
+INFO: cmn.c(143): mean[0]= 12.00, mean[1..12]= 0.0
+INFO: acmod.c(164): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(206): Reading HMM transition probability matrices: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/means
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/variances
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(354): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(835): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138624 * 20 bytes (2707 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: ./dictionary/en.dict
+ERROR: "dict.c", line 185: Line 33629: No pronunciation for word 'd'; ignored
+ERROR: "dict.c", line 205: Line 86237: Failed to add the word 'oh' (duplicate?); ignored
+INFO: dict.c(213): Allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134521 words read
+INFO: dict.c(358): Reading filler dictionary: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/noisedict
+INFO: dict.c(213): Allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 21336 bytes (20 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 21336 bytes (20 KiB) for single-phone word triphones
+INFO: jsgf.c(706): Defined rule: PUBLIC <prometheus.baseCommand>
+INFO: jsgf.c(706): Defined rule: <prometheus.command>
+INFO: fsg_model.c(208): Computing transitive closure for null transitions
+INFO: fsg_model.c(270): 0 null transitions added
+INFO: fsg_search.c(227): FSG(beam: -1080, pbeam: -1080, wbeam: -634; wip: -26, pip: 0)
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for [NOISE] to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_search.c(173): Added 0 alternate word transitions
+INFO: fsg_lextree.c(110): Allocated 258 bytes (0 KiB) for left and right context phones
+INFO: fsg_lextree.c(256): 29 HMM nodes in lextree (13 leaves)
+INFO: fsg_lextree.c(259): Allocated 3480 bytes (3 KiB) for all lextree nodes
+INFO: fsg_lextree.c(262): Allocated 1560 bytes (1 KiB) for lextree leafnodes
+ERROR: "cmd_ln.c", line 938: Unknown argument: -adcdev
+INFO: cmn_prior.c(131): cmn_prior_update: from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 40.88  2.20 12.15  6.36  0.38  6.00  1.86 -3.73  0.80 -5.27 -10.21 -9.43 -4.66 >
+INFO: fsg_search.c(859): 163 frames, 1555 HMMs (9/fr), 5639 senones (34/fr), 186 history entries (1/fr)
+
+INFO: fsg_search.c(869): fsg 0.23 CPU 0.140 xRT
+INFO: fsg_search.c(871): fsg 3.23 wall 1.969 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 163
+INFO: cmn_prior.c(131): cmn_prior_update: from < 40.88  2.20 12.15  6.36  0.38  6.00  1.86 -3.73  0.80 -5.27 -10.21 -9.43 -4.66 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 40.46  1.14 10.79  6.04 -1.17  4.79  0.69 -2.93  0.12 -4.12 -10.85 -8.78 -3.74 >
+INFO: fsg_search.c(859): 76 frames, 429 HMMs (5/fr), 2243 senones (29/fr), 75 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.21 CPU 0.273 xRT
+INFO: fsg_search.c(871): fsg 4.70 wall 6.098 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 76
+INFO: cmn_prior.c(131): cmn_prior_update: from < 40.46  1.14 10.79  6.04 -1.17  4.79  0.69 -2.93  0.12 -4.12 -10.85 -8.78 -3.74 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 39.68  1.01 10.74  5.20 -0.82  3.53  0.43 -1.67 -0.32 -4.10 -11.57 -8.62 -3.23 >
+INFO: fsg_search.c(859): 103 frames, 571 HMMs (5/fr), 2918 senones (28/fr), 102 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.21 CPU 0.202 xRT
+INFO: fsg_search.c(871): fsg 4.70 wall 4.522 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 103
+INFO: cmn_prior.c(131): cmn_prior_update: from < 39.68  1.01 10.74  5.20 -0.82  3.53  0.43 -1.67 -0.32 -4.10 -11.57 -8.62 -3.23 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 39.29  2.17 10.31  3.54 -1.50  3.38  0.84 -0.92 -0.21 -4.08 -11.85 -9.23 -3.74 >
+INFO: fsg_search.c(859): 69 frames, 348 HMMs (5/fr), 1810 senones (26/fr), 68 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.09 CPU 0.129 xRT
+INFO: fsg_search.c(871): fsg 1.59 wall 2.274 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 69
+INFO: cmn_prior.c(131): cmn_prior_update: from < 39.29  2.17 10.31  3.54 -1.50  3.38  0.84 -0.92 -0.21 -4.08 -11.85 -9.23 -3.74 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 43.60  2.72  6.20  4.93 -3.38  2.18 -3.51 -0.97 -4.38 -2.08 -8.95 -10.28 -5.24 >
+INFO: fsg_search.c(859): 311 frames, 5537 HMMs (17/fr), 17316 senones (55/fr), 1913 history entries (6/fr)
+
+INFO: fsg_search.c(869): fsg 0.68 CPU 0.218 xRT
+INFO: fsg_search.c(871): fsg 7.41 wall 2.376 xRT
+INFO: fsg_search.c(265): TOTAL fsg 1.42 CPU 0.197 xRT
+INFO: fsg_search.c(268): TOTAL fsg 21.63 wall 2.997 xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			current		current
+-cmninit		8.0		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					./dictionary/en.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					/usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2
+-input_endian		little		little
+-jsgf					./dictionary/prometheus.jsgf
+-keyphrase				
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='current', VARNORM='no', AGC='none'
+INFO: cmn.c(143): mean[0]= 12.00, mean[1..12]= 0.0
+INFO: acmod.c(164): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(206): Reading HMM transition probability matrices: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/means
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/variances
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(354): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(835): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138624 * 20 bytes (2707 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: ./dictionary/en.dict
+ERROR: "dict.c", line 185: Line 33629: No pronunciation for word 'd'; ignored
+ERROR: "dict.c", line 205: Line 86237: Failed to add the word 'oh' (duplicate?); ignored
+INFO: dict.c(213): Allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134521 words read
+INFO: dict.c(358): Reading filler dictionary: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/noisedict
+INFO: dict.c(213): Allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 21336 bytes (20 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 21336 bytes (20 KiB) for single-phone word triphones
+INFO: jsgf.c(706): Defined rule: PUBLIC <prometheus.baseCommand>
+INFO: jsgf.c(706): Defined rule: <prometheus.command>
+INFO: fsg_model.c(208): Computing transitive closure for null transitions
+INFO: fsg_model.c(270): 0 null transitions added
+INFO: fsg_search.c(227): FSG(beam: -1080, pbeam: -1080, wbeam: -634; wip: -26, pip: 0)
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for [NOISE] to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_search.c(173): Added 0 alternate word transitions
+INFO: fsg_lextree.c(110): Allocated 258 bytes (0 KiB) for left and right context phones
+INFO: fsg_lextree.c(256): 29 HMM nodes in lextree (13 leaves)
+INFO: fsg_lextree.c(259): Allocated 3480 bytes (3 KiB) for all lextree nodes
+INFO: fsg_lextree.c(262): Allocated 1560 bytes (1 KiB) for lextree leafnodes
+ERROR: "cmd_ln.c", line 938: Unknown argument: -adcdev
+INFO: cmn_prior.c(131): cmn_prior_update: from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 41.38  5.31  9.95  2.99  4.19  4.84  3.00 -0.13  0.90 -5.47 -10.83 -7.62 -4.14 >
+INFO: fsg_search.c(859): 92 frames, 565 HMMs (6/fr), 2700 senones (29/fr), 91 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.13 CPU 0.140 xRT
+INFO: fsg_search.c(871): fsg 1.62 wall 1.742 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 92
+INFO: cmn_prior.c(131): cmn_prior_update: from < 41.38  5.31  9.95  2.99  4.19  4.84  3.00 -0.13  0.90 -5.47 -10.83 -7.62 -4.14 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 50.00  0.51  3.35  4.66 -0.25  2.76 -6.00 -0.30 -1.56 -4.33 -11.10 -6.19 -7.84 >
+INFO: fsg_search.c(859): 183 frames, 1451 HMMs (7/fr), 5761 senones (31/fr), 571 history entries (3/fr)
+
+INFO: fsg_search.c(869): fsg 0.30 CPU 0.163 xRT
+INFO: fsg_search.c(871): fsg 3.29 wall 1.791 xRT
+INFO: fsg_search.c(265): TOTAL fsg 0.43 CPU 0.156 xRT
+INFO: fsg_search.c(268): TOTAL fsg 4.91 wall 1.787 xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			current		current
+-cmninit		8.0		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					./dictionary/en.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					/usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2
+-input_endian		little		little
+-jsgf					./dictionary/prometheus.jsgf
+-keyphrase				
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='current', VARNORM='no', AGC='none'
+INFO: cmn.c(143): mean[0]= 12.00, mean[1..12]= 0.0
+INFO: acmod.c(164): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(206): Reading HMM transition probability matrices: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/means
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/variances
+INFO: ms_gauden.c(292): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(294):  128x13
+INFO: ms_gauden.c(354): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(835): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138624 * 20 bytes (2707 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: ./dictionary/en.dict
+ERROR: "dict.c", line 185: Line 33629: No pronunciation for word 'd'; ignored
+ERROR: "dict.c", line 205: Line 86237: Failed to add the word 'oh' (duplicate?); ignored
+INFO: dict.c(213): Allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134521 words read
+INFO: dict.c(358): Reading filler dictionary: /usr/local/share/pocketsphinx/model/cmusphinx-en-us-ptm-5.2/noisedict
+INFO: dict.c(213): Allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 21336 bytes (20 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 21336 bytes (20 KiB) for single-phone word triphones
+INFO: jsgf.c(706): Defined rule: PUBLIC <prometheus.baseCommand>
+INFO: jsgf.c(706): Defined rule: <prometheus.command>
+INFO: fsg_model.c(208): Computing transitive closure for null transitions
+INFO: fsg_model.c(270): 0 null transitions added
+INFO: fsg_search.c(227): FSG(beam: -1080, pbeam: -1080, wbeam: -634; wip: -26, pip: 0)
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for [NOISE] to FSG
+INFO: fsg_model.c(443): Added 3 silence word transitions
+INFO: fsg_search.c(173): Added 0 alternate word transitions
+INFO: fsg_lextree.c(110): Allocated 258 bytes (0 KiB) for left and right context phones
+INFO: fsg_lextree.c(256): 29 HMM nodes in lextree (13 leaves)
+INFO: fsg_lextree.c(259): Allocated 3480 bytes (3 KiB) for all lextree nodes
+INFO: fsg_lextree.c(262): Allocated 1560 bytes (1 KiB) for lextree leafnodes
+ERROR: "cmd_ln.c", line 938: Unknown argument: -adcdev
+INFO: cmn_prior.c(131): cmn_prior_update: from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 41.27  2.39 11.18  7.34  3.28  1.32  4.12 -3.21 -2.35 -6.48 -11.54 -9.00 -4.48 >
+INFO: fsg_search.c(859): 131 frames, 883 HMMs (6/fr), 4014 senones (30/fr), 130 history entries (0/fr)
+
+INFO: fsg_search.c(869): fsg 0.18 CPU 0.136 xRT
+INFO: fsg_search.c(871): fsg 2.42 wall 1.835 xRT
+ERROR: "fsg_search.c", line 943: Final result does not match the grammar in frame 131
+INFO: cmn_prior.c(131): cmn_prior_update: from < 41.27  2.39 11.18  7.34  3.28  1.32  4.12 -3.21 -2.35 -6.48 -11.54 -9.00 -4.48 >
+INFO: cmn_prior.c(149): cmn_prior_update: to   < 52.53 -1.87  2.41  9.55  1.76 -0.50 -4.18 -0.55 -3.87 -1.98 -9.66 -5.16 -5.32 >
+INFO: fsg_search.c(859): 217 frames, 1621 HMMs (7/fr), 7037 senones (32/fr), 621 history entries (2/fr)
+
+INFO: fsg_search.c(869): fsg 0.32 CPU 0.147 xRT
+INFO: fsg_search.c(871): fsg 4.07 wall 1.866 xRT
+INFO: fsg_search.c(265): TOTAL fsg 0.50 CPU 0.144 xRT
+INFO: fsg_search.c(268): TOTAL fsg 6.49 wall 1.865 xRT

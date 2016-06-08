@@ -34,15 +34,15 @@ bool PSRunning(){
 
 std::string getInput(){
 	voiceIn::lock.lock();
-        if (voiceIn::input.empty()){
+	if (voiceIn::input.empty()){
 		voiceIn::lock.unlock();
-                return "";
-        } else {
-                std::string data = voiceIn::input.front();
-                voiceIn::input.pop();
+		return "";
+	} else {
+		std::string data = voiceIn::input.front();
+		voiceIn::input.pop();
 		voiceIn::lock.unlock();
-                return data;
-        }
+		return data;
+	}
 }
 
 static void mainMenuInput() {
@@ -54,7 +54,8 @@ static void mainMenuInput() {
         cmd_ln_t *config = NULL;
 
         config = cmd_ln_init(NULL, ps_args(), TRUE,
-                "-hmm", MODELDIR "/en-us/en-us",
+                //"-hmm", MODELDIR "/en-us/en-us",
+		"-hmm", MODELDIR "/cmusphinx-en-us-ptm-5.2",
                 //"-lm", MODELDIR "/en-us/en-us.lm.bin",
                 "-dict", "./dictionary/en.dict",
                 "-jsgf", "./dictionary/prometheus.jsgf",
@@ -120,42 +121,30 @@ static void mainMenuInput() {
 
 static void generalInput() {
 	err_set_logfile("pocketSphinx_LogGI.txt");
-	voiceIn::quit = false;
+        voiceIn::quit = false;
 
         // Pocket sphinx setup
         ps_decoder_t *ps = NULL;
         cmd_ln_t *config = NULL;
 
-	ad_rec_t *ad;	// <- microphone recorder.
-
-
-	/*
-	We are using a phonetically tied language model.
-	*/
-	config = cmd_ln_init(NULL, ps_args(), TRUE,
-		"-hmm", MODELDIR "/en-us/en-us",
-		"-featparams", MODELDIR "/cmusphinx-en-us-ptm-5.2/feat.params",
-		"-mdef", MODELDIR "/cmusphinx-en-us-ptm-5.2/mdef",
-		"-mean", MODELDIR "/cmusphinx-en-us-ptm-5.2/means",
-		"-var", MODELDIR "/cmusphinx-en-us-ptm-5.2/variances",
-		"-tmat", MODELDIR "/cmusphinx-en-us-ptm-5.2/transition_matrices",
-		"-sendump", MODELDIR "/cmusphinx-en-us-ptm-5.2/sendump",
-		"-dict", "./dictionary/en.dict",
-	     	"-compallsen", "yes",
-	     	"-input_endian", "little",
-		NULL);
+        config = cmd_ln_init(NULL, ps_args(), TRUE,
+                //"-hmm", MODELDIR "/en-us/en-us",
+                "-hmm", MODELDIR "/cmusphinx-en-us-ptm-5.2",
+                "-lm", MODELDIR "/en-us/en-us.lm.bin",
+                "-dict", "./dictionary/en.dict", 
+                NULL);
 
         ps = ps_init(config);
-	if (ps == NULL) {
-		std::cout << "Problem?\n";
-	}
 
-	int16 adbuf[8192];
-	uint8 utt_started, in_speech;
-	int32 k;
-	char const *hyp;
-	bool failed = false;
-	if ((ad = ad_open_dev(cmd_ln_str_r(config, "-adcdev"),
+        ad_rec_t *ad;
+        int16 adbuf[8192];
+        uint8 utt_started, in_speech;
+        int32 k;
+        char const *hyp;
+        bool failed = false;
+
+	std::cout << failed << '\n';
+        if ((ad = ad_open_dev(cmd_ln_str_r(config, "-adcdev"),
                                 (int) cmd_ln_float32_r(config,
                                 "-samprate"))) == NULL)
                 failed = true;
@@ -167,8 +156,10 @@ static void generalInput() {
 
         std::string command = "";
         voiceIn::lock.lock();
+
 	std::cout << failed << '\n';
-        while (!voiceIn::quit && !failed) {
+
+	while (!voiceIn::quit && !failed) {
                 voiceIn::lock.unlock();
                 k = ad_read(ad, adbuf, 8191);
 
@@ -179,9 +170,9 @@ static void generalInput() {
                         utt_started = TRUE;
                 }
                 if (!in_speech && utt_started) {
-                        // speech -> silence transition, time to start new utte$
+                        // speech -> silence transition, time to start new utterance
                         ps_end_utt(ps);
-			hyp = ps_get_hyp(ps, NULL );
+                        hyp = ps_get_hyp(ps, NULL );
                         if (hyp != NULL) {
                                 voiceIn::lock.lock();
                                 std::istringstream iss(hyp);

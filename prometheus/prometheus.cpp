@@ -66,13 +66,14 @@ int main() {
 					inputThread = std::thread(&generalInput);
 					//computer.displayText("What shall I say?");
 					computer.say("What shall I say?");
-					std::this_thread::sleep_for(std::chrono::milliseconds(2000));
+					std::this_thread::sleep_for(std::chrono::milliseconds(1000));
 					do {
 						command = getInput();
-						say += command;
-						std::cout << say << '\n';
-						std::this_thread::sleep_for(std::chrono::milliseconds(10));
-					} while (command != "");
+						if (command != "please") {
+							say+=command + " ";
+							std::this_thread::sleep_for(std::chrono::milliseconds(10));
+						}
+					} while (command != "please");
 					computer.say(say.c_str());
 					std::cout << "The computer said" << say << '\n';
 
