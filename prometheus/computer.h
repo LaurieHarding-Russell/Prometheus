@@ -13,6 +13,15 @@ extern"C" {
 #include <X11/Xlib.h>
 
 class Computer {
+	struct EState{
+		int anger;
+		int fear;
+		int disgust;
+		int happiness;
+		int sadness;
+		int surprise;
+	};
+
         public:
         Computer();
         ~Computer();
@@ -31,5 +40,6 @@ class Computer {
 	Display *display;
 	int screen;
 	Window window;
+	EState emotState; 
 };
 #endif
