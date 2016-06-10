@@ -18,7 +18,7 @@ int main() {
 	computer.say("Morning. You look well today.");
 
 	// setup pocket sphinx and listen for input
-	std::thread inputThread = std::thread(&mainMenuInput);
+	std::thread inputThread = std::thread(&grammerVInput, "./dictionary/prometheus.jsgf");
 	std::string command;
 	bool running = true;
 	while (running) {
@@ -31,35 +31,53 @@ int main() {
 				//waitForSpeaker();
 				command = getInput();
 				if (command == "search") {
-					std::string search = "";
 					stopInput();
                                         inputThread.join();
                                         inputThread = std::thread(&generalInput);
 					computer.displayText("What would you likeme to search?");
 					computer.say("what would you like me to search?");
 					command = "";
+					std::string search = "";
 					do {
 						command = getInput();
 						std::this_thread::sleep_for(std::chrono::milliseconds(100));
-					} while (command == "");
-
-					while (command != "") {
-                                                command = getInput();
-                                                search += command;
-                                        }
-                                        computer.say(search.c_str());
-
-					std::string result = internet->search(search.c_str());
+					} while (command == "search");
+					do {
+						command += getInput() + " ";
+                                        	search += command + "+";
+						std::this_thread::sleep_for(std::chrono::milliseconds(100));
+					} while (command == "please");
 
 					stopInput();
                                         inputThread.join();
-                                        inputThread = std::thread(&mainMenuInput);
 
+					command = "Searching for " + command;
+					computer.say (command.c_str());
+					internet->search(search.c_str());
+					inputThread = std::thread(&grammerVInput, "./dictionary/internet.jsgf");
+                                        computer.say(internet->getCurrentResult().c_str());
+
+					do {
+						command = getInput();
+						if (command == "next") {
+							computer.say(internet->getNextResult().c_str());
+						} else if (command == "current") {
+							computer.say(internet->getCurrentResult().c_str());
+						} else if (command == "previous") {
+							computer.say(internet->getPreviousResult().c_str());
+						} else if (command == "select") {
+
+						}
+					} while (command != "exit");
+
+                                        stopInput();
+                                        inputThread.join();
+
+                                        inputThread = std::thread(&grammerVInput, "./dictionary/prometheus.jsgf");
 				} else if (command == "tv"){
 					// command = getInput();
 				} else if (command == "talk") {
 					std::string say = "";
-				//	waitForSpeaker();
 					stopInput();
 					inputThread.join();
 					// Maybe clear the input just in case?
@@ -82,7 +100,7 @@ int main() {
 
 					stopInput();
                                         inputThread.join();
-                                        inputThread = std::thread(&mainMenuInput);
+                                        inputThread = std::thread(&grammerVInput, "./dictionary/prometheus.jsgf");
 
 
 				} else if (command == "shutdown") {

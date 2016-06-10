@@ -45,7 +45,7 @@ std::string getInput(){
 	}
 }
 
-static void mainMenuInput() {
+static void grammerVInput(const char* file) {
 	err_set_logfile("pocketSphinx_Log.txt");
 	voiceIn::quit = false;
 
@@ -56,9 +56,8 @@ static void mainMenuInput() {
         config = cmd_ln_init(NULL, ps_args(), TRUE,
                 //"-hmm", MODELDIR "/en-us/en-us",
 		"-hmm", MODELDIR "/cmusphinx-en-us-ptm-5.2",
-                //"-lm", MODELDIR "/en-us/en-us.lm.bin",
                 "-dict", "./dictionary/en.dict",
-                "-jsgf", "./dictionary/prometheus.jsgf",
+                "-jsgf", file,
                 NULL);
 
         ps = ps_init(config);

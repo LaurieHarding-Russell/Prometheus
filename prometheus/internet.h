@@ -1,8 +1,6 @@
 /*
 By Laurie Harding-Russell
-Purpose: To interface with some websites via the sound terminal...
-Yes, the actions that can be taken will be very, very, very limited.
-What have I gotten myself into?
+Purpose: To interface with some websites. 
 
 */
 
@@ -20,14 +18,26 @@ What have I gotten myself into?
 #include <string>
 #include <iostream>
 
+#define MAXRESULTS 10
+struct Result {
+	std::string desc;
+	std::string website;
+};
+
 class Internet {
 	public:
 	Internet();
 	~Internet();
-	std::string search(std::string search);
+	void search(std::string search);
+	std::string getCurrentResult();
+	std::string getNextResult();
+	std::string getPreviousResult();
 
 	private:
 	std::string cleanStringOfTags(std::string text);
+	int current;
+	int max;
+	Result results[MAXRESULTS];
 
 };
 
