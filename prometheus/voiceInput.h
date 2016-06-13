@@ -18,12 +18,17 @@ By Laurie Harding-Russell
 #include <chrono>
 
 #include <iostream>
-#include <fstream>
 
 namespace voiceIn {
 	std::queue<std::string> input;
         bool quit = false;
         std::mutex lock;
+}
+
+void clearInput(){
+	voiceIn::lock.lock();
+	while(!voiceIn::input.empty()) voiceIn::input.pop();
+	voiceIn::lock.unlock();
 }
 
 bool PSRunning(){
@@ -48,7 +53,9 @@ std::string getInput(){
 
 static void grammerVInput(const char* file) {
 	err_set_logfile("pocketSphinx_Log.txt");
+	voiceIn::lock.lock();
 	voiceIn::quit = false;
+	voiceIn::lock.unlock();
 
         // Pocket sphinx setup
         ps_decoder_t *ps = NULL;
@@ -110,7 +117,7 @@ static void grammerVInput(const char* file) {
 			}
 			utt_started = FALSE;
 		}
-		std::this_thread::sleep_for(std::chrono::milliseconds(750));
+		std::this_thread::sleep_for(std::chrono::milliseconds(100));
 		voiceIn::lock.lock();
 	}
 	voiceIn::lock.unlock();
@@ -121,7 +128,10 @@ static void grammerVInput(const char* file) {
 
 static void generalInput() {
 	err_set_logfile("pocketSphinx_LogGI.txt");
+        voiceIn::lock.lock();
         voiceIn::quit = false;
+        voiceIn::lock.unlock();
+
 
         // Pocket sphinx setup
         ps_decoder_t *ps = NULL;
@@ -143,7 +153,6 @@ static void generalInput() {
         char const *hyp;
         bool failed = false;
 
-	std::cout << failed << '\n';
         if ((ad = ad_open_dev(cmd_ln_str_r(config, "-adcdev"),
                                 (int) cmd_ln_float32_r(config,
                                 "-samprate"))) == NULL)
@@ -156,8 +165,6 @@ static void generalInput() {
 
         std::string command = "";
         voiceIn::lock.lock();
-
-	std::cout << failed << '\n';
 
 	while (!voiceIn::quit && !failed) {
                 voiceIn::lock.unlock();
@@ -200,7 +207,9 @@ Purpose: to record input from the speaker.
 */
 static void saveInput() {
         err_set_logfile("pocketSphinx_LogSI.txt");
-        voiceIn::quit = false;
+	voiceIn::lock.lock();
+	voiceIn::quit = false;
+	voiceIn::lock.unlock();
 
         // Pocket sphinx setup
         ps_decoder_t *ps = NULL;
@@ -209,7 +218,7 @@ static void saveInput() {
         config = cmd_ln_init(NULL, ps_args(), TRUE,
 		"-hmm", MODELDIR "/cmusphinx-en-us-ptm-5.2",
                 "-dict", "./dictionary/en.dict",
-                "-jsgf", "saveIn.jsgf",
+                "-jsgf", "./dictionary/saveIn.jsgf",
                 NULL);
 
         ps = ps_init(config);
@@ -220,6 +229,7 @@ static void saveInput() {
         int32 k;
         char const *hyp;
         bool failed = false;
+
 	FILE * sFile = fopen("audio.txt", "wb");
 	if (sFile != NULL) {
 	        if ((ad = ad_open_dev(cmd_ln_str_r(config, "-adcdev"),
@@ -266,6 +276,7 @@ static void saveInput() {
 	                std::this_thread::sleep_for(std::chrono::milliseconds(100));
         	        voiceIn::lock.lock();
         	}
+
         	voiceIn::lock.unlock();
 		fclose(sFile);
         	ad_close(ad);
@@ -276,7 +287,10 @@ static void saveInput() {
 
 void processVoiceData(){
 	err_set_logfile("pocketSphinx_LogPF.txt");
+        voiceIn::lock.lock();
         voiceIn::quit = false;
+        voiceIn::lock.unlock();
+
 
         // Pocket sphinx setup
         ps_decoder_t *ps = NULL;
@@ -297,12 +311,11 @@ void processVoiceData(){
 	        int32 k;
        		char const *hyp;
         	bool failed = false;
-		std::string command = "";
 
         	if (ps_start_utt(ps) < 0)
         	        failed =true;
 
-	        while (sFile) {
+	        while (!feof(sFile) && !failed) {
 	                int size;
 	 		size = fread(buf, 2, 8192, sFile);
 	        	ps_process_raw(ps, buf, size, FALSE, FALSE);
@@ -311,9 +324,9 @@ void processVoiceData(){
 		ps_end_utt(ps);
 		hyp = ps_get_hyp(ps, &k);
 		fclose(sFile);
-
+		std::string command;
 		if (hyp != NULL) {
-	                voiceIn::lock.lock();
+	        	voiceIn::lock.lock();
        	        	std::istringstream iss(hyp);
                 	while (std::getline(iss,command, ' ')) {
                 		voiceIn::input.push(command);

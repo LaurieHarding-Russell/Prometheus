@@ -33,7 +33,9 @@ int main() {
 				if (command == "search") {
 					stopInput();
                                         inputThread.join();
-                                        inputThread = std::thread(&generalInput);
+					clearInput();
+
+                                        inputThread = std::thread(&saveInput);
 					computer.displayText("What would you likeme to search?");
 					computer.say("what would you like me to search?");
 					command = "";
@@ -41,38 +43,53 @@ int main() {
 					do {
 						command = getInput();
 						std::this_thread::sleep_for(std::chrono::milliseconds(100));
-					} while (command == "search");
+					} while (command != "search");
 					do {
-						command += getInput() + " ";
-                                        	search += command + "+";
+                                        	command = getInput();
 						std::this_thread::sleep_for(std::chrono::milliseconds(100));
-					} while (command == "please");
-
+					} while (command != "please");
+					std::cout << command << '\n';
 					stopInput();
                                         inputThread.join();
-
-					command = "Searching for " + command;
-					computer.say (command.c_str());
-					internet->search(search.c_str());
-					inputThread = std::thread(&grammerVInput, "./dictionary/internet.jsgf");
-                                        computer.say(internet->getCurrentResult().c_str());
-
+					computer.say ("Give me a second to process that.");
+					clearInput();
+					processVoiceData();
+					stopInput();
 					do {
-						command = getInput();
-						if (command == "next") {
-							computer.say(internet->getNextResult().c_str());
-						} else if (command == "current") {
-							computer.say(internet->getCurrentResult().c_str());
-						} else if (command == "previous") {
-							computer.say(internet->getPreviousResult().c_str());
-						} else if (command == "select") {
+                                                command = getInput();
+						std::cout << command << '\n';
+                                        } while (command != "search" && command != "");
+					std::string temp;
+					do {
+						temp = getInput();
+						command += temp + " ";
+						search += temp + "+";
+						std::cout << temp << '\n';
+					} while (temp != "" && temp != "please");
+					command = "Searching for " + command;
+					std::cout << search << '\n';
+					computer.say(command.c_str());
+					if ( search != "") {
+						internet->search(search.c_str());
+						//inputThread = std::thread(&grammerVInput, "./dictionary/internet.jsgf");
+                                        	computer.say(internet->getCurrentResult().c_str());
 
-						}
-					} while (command != "exit");
+						/*do {
+							command = getInput();
+							if (command == "next") {
+								computer.say(internet->getNextResult().c_str());
+							} else if (command == "current") {
+								computer.say(internet->getCurrentResult().c_str());
+							} else if (command == "previous") {
+								computer.say(internet->getPreviousResult().c_str());
+							} else if (command == "select") {
 
-                                        stopInput();
-                                        inputThread.join();
+							}
+						} while (command != "exit");
 
+                	                        stopInput();
+		                                inputThread.join();*/
+					}
                                         inputThread = std::thread(&grammerVInput, "./dictionary/prometheus.jsgf");
 				} else if (command == "tv"){
 					// command = getInput();
@@ -80,18 +97,27 @@ int main() {
 					std::string say = "";
 					stopInput();
 					inputThread.join();
-					// Maybe clear the input just in case?
+					// clear the input
+					do { 
+                                                command = getInput();
+                                        } while (command != "");
+
 					inputThread = std::thread(&generalInput);
 					//computer.displayText("What shall I say?");
 					computer.say("What shall I say?");
-					std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+					std::this_thread::sleep_for(std::chrono::milliseconds(100));
 					do {
 						command = getInput();
+						//if (command != "")
+						//	std::cout << command << " B\n";
+						std::this_thread::sleep_for(std::chrono::milliseconds(100));
 					}while (command != "say");
 					do {
 						command = getInput();
+						//if (command != "")
+                                                //        std::cout << command << " M\n";
+						std::this_thread::sleep_for(std::chrono::milliseconds(100));
 						if (command != "please") {
-							say+=command + " ";
 							std::this_thread::sleep_for(std::chrono::milliseconds(10));
 						}
 					} while (command != "please");

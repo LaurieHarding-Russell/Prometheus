@@ -1,4 +1,5 @@
 *~
 *.o
 *.*.save
+*.txt
 Promethetheus

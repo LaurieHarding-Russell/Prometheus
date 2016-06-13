@@ -3,14 +3,14 @@
 
 extern"C" {
 	#include "flite.h"
-	//cst_voice* register_cmu_us_kal(const char *voxdir);
-	//void unregister_cmu_us_kal(cst_voice *vox);
 	cst_voice* register_cmu_us_slt(const char *voxdir);
 	void unregister_cmu_us_slt(cst_voice *vox);
 }
+#include <alsa/asoundlib.h>
 
 // Graphical output
 #include <X11/Xlib.h>
+
 
 class Computer {
 	struct EState{
@@ -36,6 +36,8 @@ class Computer {
 	void displayText(const char* text);
 
         private:
+	void setAlsaMasterVolume(long volume);
+
 	cst_voice* voice;
 	Display *display;
 	int screen;
