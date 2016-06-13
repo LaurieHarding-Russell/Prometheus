@@ -1,0 +1,6 @@
+#JSGF V1.0;
+/**
+ * JSGF Grammar for prometheus
+ */
+grammar menu;
+public <baseCommand> = next | current | previous | select | exit;
