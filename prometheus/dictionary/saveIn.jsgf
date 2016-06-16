@@ -5,5 +5,5 @@
 grammar menu;
 public <baseCommand> = <start> <stop>;
 
-<start> = search | say;
+<start> = search | who is | say;
 <stop> = please;

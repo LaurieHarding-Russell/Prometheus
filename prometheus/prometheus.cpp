@@ -1,7 +1,13 @@
-
+/*
+By Laurie Harding-Russell
+Purpose: This program acts as interface that allows the user to perform basic tasks.
+*/
 #include <iostream>
 #include <string>
 #include <sstream>
+#include <unistd.h>
+#include <linux/reboot.h>
+#include <sys/reboot.h>
 
 #include "voiceInput.h"
 
@@ -40,55 +46,48 @@ int main() {
 					computer.say("what would you like me to search?");
 					command = "";
 					std::string search = "";
-					do {
-						command = getInput();
-						std::this_thread::sleep_for(std::chrono::milliseconds(100));
-					} while (command != "search");
-					do {
-                                        	command = getInput();
-						std::this_thread::sleep_for(std::chrono::milliseconds(100));
-					} while (command != "please");
 					std::cout << command << '\n';
-					stopInput();
+					//stopInput();
                                         inputThread.join();
 					computer.say ("Give me a second to process that.");
+					std::string searchType = getInput();
 					clearInput();
 					processVoiceData();
 					stopInput();
-					do {
-                                                command = getInput();
-						std::cout << command << '\n';
-                                        } while (command != "search" && command != "");
 					std::string temp;
 					do {
 						temp = getInput();
 						command += temp + " ";
 						search += temp + "+";
 						std::cout << temp << '\n';
-					} while (temp != "" && temp != "please");
+					} while (temp != "");
 					command = "Searching for " + command;
 					std::cout << search << '\n';
 					computer.say(command.c_str());
 					if ( search != "") {
-						internet->search(search.c_str());
-						//inputThread = std::thread(&grammerVInput, "./dictionary/internet.jsgf");
-                                        	computer.say(internet->getCurrentResult().c_str());
+						if (searchType == "search") {
+							internet->search(search.c_str());
+							//inputThread = std::thread(&grammerVInput, "./dictionary/internet.jsgf");
+                                        		computer.say(internet->getCurrentResult().c_str());
 
-						/*do {
-							command = getInput();
-							if (command == "next") {
-								computer.say(internet->getNextResult().c_str());
-							} else if (command == "current") {
-								computer.say(internet->getCurrentResult().c_str());
-							} else if (command == "previous") {
-								computer.say(internet->getPreviousResult().c_str());
-							} else if (command == "select") {
+							/*do {
+								command = getInput();
+								if (command == "next") {
+									computer.say(internet->getNextResult().c_str());
+								} else if (command == "current") {
+									computer.say(internet->getCurrentResult().c_str());
+								} else if (command == "previous") {
+									computer.say(internet->getPreviousResult().c_str());
+								} else if (command == "select") {
 
-							}
-						} while (command != "exit");
+									}
+							} while (command != "exit");
 
-                	                        stopInput();
-		                                inputThread.join();*/
+                	                        	stopInput();
+		                                	inputThread.join();*/
+						} else {
+							computer.say("Feature not programmed yet. ");
+						}
 					}
                                         inputThread = std::thread(&grammerVInput, "./dictionary/prometheus.jsgf");
 				} else if (command == "tv"){
@@ -145,5 +144,7 @@ int main() {
 		std::this_thread::sleep_for(std::chrono::milliseconds(10));
 	}
 	inputThread.join();
+	sync();
+	reboot(LINUX_REBOOT_CMD_POWER_OFF);
 	return 0;
 }

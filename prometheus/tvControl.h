@@ -18,6 +18,8 @@ class tvControl {
 	tvControl();
 	~tvControl();
 	void tvOn();
+	void hdmiUp();
+	void hdmiDown();
 	void tvOff();
 	int onKeypress(void* not_used, const CEC::cec_keypress msg);
 
@@ -29,9 +31,14 @@ class tvControl {
 
 	// CEC
 	bool cec;
-	CEC::ICECCallbacks        cec_callbacks;
-	CEC::libcec_configuration cec_config;
-	CEC::ICECAdapter* cec_adapter;
+	//CEC::ICECCallbacks        cec_callbacks;
+	CEC::libcec_configuration cecConfig;
+	CEC::ICECAdapter* cecAdapter;
+
+	// Command
+	CEC::cec_logical_address device;
+
+	char* port;
 };
 
 #endif

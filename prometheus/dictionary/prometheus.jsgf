@@ -4,5 +4,5 @@
  */
 grammar prometheus;
 public <baseCommand> = computer <command>;
-<command> = talk | <search> | email | shutdown | <NULL>;
+<command> = talk | <search> | email | shutdown | record | <NULL>;
 <search> = search | who is | what is;

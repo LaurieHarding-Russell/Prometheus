@@ -230,6 +230,7 @@ static void saveInput() {
         char const *hyp;
         bool failed = false;
 
+	int state = 0;
 	FILE * sFile = fopen("audio.txt", "wb");
 	if (sFile != NULL) {
 	        if ((ad = ad_open_dev(cmd_ln_str_r(config, "-adcdev"),
@@ -265,7 +266,18 @@ static void saveInput() {
         	                        voiceIn::lock.lock();
         	                        std::istringstream iss(hyp);
         	                        while (std::getline(iss,command, ' ')) {
-        	                                voiceIn::input.push(command);
+						if (command == "search" && state == 0) {
+							state = 1;
+							voiceIn::input.push("search");
+						} else if (command == "who" && state == 0) {
+							state = 1;
+							voiceIn::input.push("who");
+						} else if (command == "please" && state == 1) {
+							state = 2;
+							voiceIn::quit = true;
+						} else if (state == 1){
+							fwrite(adbuf, 2, k, sFile);
+						}
         	                        }
         	                        voiceIn::lock.unlock();
         	                }
@@ -285,12 +297,11 @@ static void saveInput() {
 	}
 }
 
-void processVoiceData(){
+void processVoiceData() {
 	err_set_logfile("pocketSphinx_LogPF.txt");
         voiceIn::lock.lock();
         voiceIn::quit = false;
         voiceIn::lock.unlock();
-
 
         // Pocket sphinx setup
         ps_decoder_t *ps = NULL;

@@ -111,7 +111,7 @@ echo "		human.execute(http://www.festvox.org/flite/download.html)"
 echo "		human.execute(http://www.jamesrobertson.eu/blog/2013/may/19/installing-lirc-on-raspbian.html)";
 echo "	}"
 echo "} catch(human error) {"
-echo "	human.blameLaurie()"
+echo "		human.blameLaurie()"
 echo "}"
 
 echo "Also, wget http://downloads.sourceforge.net/project/cmusphinx/Acoustic%20and%20Language%20Models/US%20English/cmusphinx-en-us-ptm-5.2.tar.gz?r=&amp;ts=1465160188&amp;use_mirror=heanet"
